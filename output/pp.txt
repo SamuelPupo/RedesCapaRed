@@ -1,0 +1,4076 @@
+time=10200, port=1, send=1, transmission=successfully
+
+time=10210, port=1, send=1, transmission=successfully
+
+time=10220, port=1, send=1, transmission=successfully
+
+time=10230, port=1, send=1, transmission=successfully
+
+time=10240, port=1, send=1, transmission=successfully
+
+time=10250, port=1, send=1, transmission=successfully
+
+time=10260, port=1, send=1, transmission=successfully
+
+time=10270, port=1, send=1, transmission=successfully
+
+time=10280, port=1, send=1, transmission=successfully
+
+time=10290, port=1, send=1, transmission=successfully
+
+time=10300, port=1, send=1, transmission=successfully
+
+time=10310, port=1, send=1, transmission=successfully
+
+time=10320, port=1, send=1, transmission=successfully
+
+time=10330, port=1, send=1, transmission=successfully
+
+time=10340, port=1, send=1, transmission=successfully
+
+time=10350, port=1, send=1, transmission=successfully
+
+time=10360, port=1, send=1, transmission=successfully
+
+time=10370, port=1, send=1, transmission=successfully
+
+time=10380, port=1, send=0, transmission=successfully
+
+time=10390, port=1, send=0, transmission=successfully
+
+time=10400, port=1, send=0, transmission=successfully
+
+time=10410, port=1, send=1, transmission=successfully
+
+time=10420, port=1, send=0, transmission=successfully
+
+time=10430, port=1, send=1, transmission=successfully
+
+time=10440, port=1, send=1, transmission=successfully
+
+time=10450, port=1, send=1, transmission=successfully
+
+time=10460, port=1, send=0, transmission=successfully
+
+time=10470, port=1, send=1, transmission=successfully
+
+time=10480, port=1, send=0, transmission=successfully
+
+time=10490, port=1, send=1, transmission=successfully
+
+time=10500, port=1, send=1, transmission=successfully
+
+time=10510, port=1, send=0, transmission=successfully
+
+time=10520, port=1, send=0, transmission=successfully
+
+time=10530, port=1, send=0, transmission=successfully
+
+time=10540, port=1, send=0, transmission=successfully
+
+time=10550, port=1, send=0, transmission=successfully
+
+time=10560, port=1, send=1, transmission=successfully
+
+time=10570, port=1, send=0, transmission=successfully
+
+time=10580, port=1, send=0, transmission=successfully
+
+time=10590, port=1, send=0, transmission=successfully
+
+time=10600, port=1, send=0, transmission=successfully
+
+time=10610, port=1, send=0, transmission=successfully
+
+time=10620, port=1, send=0, transmission=successfully
+
+time=10630, port=1, send=0, transmission=successfully
+
+time=10640, port=1, send=1, transmission=successfully
+
+time=10650, port=1, send=0, transmission=successfully
+
+time=10660, port=1, send=1, transmission=successfully
+
+time=10670, port=1, send=0, transmission=successfully
+
+time=10680, port=1, send=0, transmission=successfully
+
+time=10690, port=1, send=0, transmission=successfully
+
+time=10700, port=1, send=0, transmission=successfully
+
+time=10710, port=1, send=0, transmission=successfully
+
+time=10720, port=1, send=1, transmission=successfully
+
+time=10730, port=1, send=0, transmission=successfully
+
+time=10740, port=1, send=1, transmission=successfully
+
+time=10750, port=1, send=0, transmission=successfully
+
+time=10760, port=1, send=0, transmission=successfully
+
+time=10770, port=1, send=0, transmission=successfully
+
+time=10780, port=1, send=0, transmission=successfully
+
+time=10790, port=1, send=1, transmission=successfully
+
+time=10800, port=1, send=1, transmission=successfully
+
+time=10810, port=1, send=0, transmission=successfully
+
+time=10820, port=1, send=1, transmission=successfully
+
+time=10830, port=1, send=1, transmission=successfully
+
+time=10840, port=1, send=0, transmission=successfully
+
+time=10850, port=1, send=0, transmission=successfully
+
+time=10860, port=1, send=0, transmission=successfully
+
+time=10870, port=1, send=1, transmission=successfully
+
+time=10880, port=1, send=1, transmission=successfully
+
+time=10890, port=1, send=0, transmission=successfully
+
+time=10900, port=1, send=0, transmission=successfully
+
+time=10910, port=1, send=1, transmission=successfully
+
+time=10920, port=1, send=0, transmission=successfully
+
+time=10930, port=1, send=0, transmission=successfully
+
+time=10940, port=1, send=0, transmission=successfully
+
+time=10950, port=1, send=1, transmission=successfully
+
+time=10960, port=1, send=1, transmission=successfully
+
+time=10970, port=1, send=0, transmission=successfully
+
+time=10980, port=1, send=1, transmission=successfully
+
+time=10990, port=1, send=1, transmission=successfully
+
+time=11000, port=1, send=0, transmission=successfully
+
+time=11010, port=1, send=0, transmission=successfully
+
+time=11020, port=1, send=0, transmission=successfully
+
+time=11030, port=1, send=0, transmission=successfully
+
+time=11040, port=1, send=1, transmission=successfully
+
+time=11050, port=1, send=0, transmission=successfully
+
+time=11060, port=1, send=1, transmission=successfully
+
+time=11070, port=1, send=0, transmission=successfully
+
+time=11080, port=1, send=0, transmission=successfully
+
+time=11090, port=1, send=0, transmission=successfully
+
+time=11100, port=1, send=0, transmission=successfully
+
+time=11110, port=1, send=0, transmission=successfully
+
+time=11120, port=1, send=0, transmission=successfully
+
+time=11130, port=1, send=1, transmission=successfully
+
+time=11140, port=1, send=1, transmission=successfully
+
+time=11150, port=1, send=0, transmission=successfully
+
+time=11160, port=1, send=0, transmission=successfully
+
+time=11170, port=1, send=1, transmission=successfully
+
+time=11180, port=1, send=1, transmission=successfully
+
+time=11190, port=1, send=1, transmission=successfully
+
+time=11200, port=1, send=1, transmission=successfully
+
+time=11210, port=1, send=0, transmission=successfully
+
+time=11220, port=1, send=1, transmission=successfully
+
+time=11230, port=1, send=0, transmission=successfully
+
+time=11240, port=1, send=0, transmission=successfully
+
+time=11250, port=1, send=0, transmission=successfully
+
+time=11260, port=1, send=0, transmission=successfully
+
+time=11270, port=1, send=1, transmission=successfully
+
+time=11280, port=1, send=1, transmission=successfully
+
+time=11290, port=1, send=1, transmission=successfully
+
+time=11300, port=1, send=1, transmission=successfully
+
+time=11310, port=1, send=1, transmission=successfully
+
+time=11320, port=1, send=0, transmission=successfully
+
+time=11330, port=1, send=0, transmission=successfully
+
+time=11340, port=1, send=0, transmission=successfully
+
+time=11350, port=1, send=0, transmission=successfully
+
+time=11360, port=1, send=1, transmission=successfully
+
+time=11370, port=1, send=0, transmission=successfully
+
+time=11380, port=1, send=1, transmission=successfully
+
+time=11390, port=1, send=0, transmission=successfully
+
+time=11400, port=1, send=0, transmission=successfully
+
+time=11410, port=1, send=0, transmission=successfully
+
+time=11420, port=1, send=0, transmission=successfully
+
+time=11430, port=1, send=1, transmission=successfully
+
+time=11440, port=1, send=1, transmission=successfully
+
+time=11450, port=1, send=0, transmission=successfully
+
+time=11460, port=1, send=1, transmission=successfully
+
+time=11470, port=1, send=1, transmission=successfully
+
+time=11480, port=1, send=0, transmission=successfully
+
+time=11490, port=1, send=0, transmission=successfully
+
+time=11500, port=1, send=0, transmission=successfully
+
+time=11510, port=1, send=1, transmission=successfully
+
+time=11520, port=1, send=1, transmission=successfully
+
+time=11530, port=1, send=0, transmission=successfully
+
+time=11540, port=1, send=0, transmission=successfully
+
+time=11550, port=1, send=1, transmission=successfully
+
+time=11560, port=1, send=0, transmission=successfully
+
+time=11570, port=1, send=0, transmission=successfully
+
+time=11580, port=1, send=0, transmission=successfully
+
+time=11590, port=1, send=1, transmission=successfully
+
+time=11600, port=1, send=1, transmission=successfully
+
+time=11610, port=1, send=0, transmission=successfully
+
+time=11620, port=1, send=1, transmission=successfully
+
+time=11630, port=1, send=1, transmission=successfully
+
+time=11640, port=1, send=0, transmission=successfully
+
+time=11650, port=1, send=0, transmission=successfully
+
+time=11660, port=1, send=0, transmission=successfully
+
+time=11670, port=1, send=0, transmission=successfully
+
+time=11680, port=1, send=1, transmission=successfully
+
+time=11690, port=1, send=0, transmission=successfully
+
+time=11700, port=1, send=1, transmission=successfully
+
+time=11710, port=1, send=0, transmission=successfully
+
+time=11720, port=1, send=0, transmission=successfully
+
+time=11730, port=1, send=0, transmission=successfully
+
+time=11740, port=1, send=0, transmission=successfully
+
+time=11750, port=1, send=0, transmission=successfully
+
+time=11760, port=1, send=0, transmission=successfully
+
+time=11770, port=1, send=1, transmission=successfully
+
+time=11780, port=1, send=1, transmission=successfully
+
+time=11790, port=1, send=0, transmission=successfully
+
+time=11800, port=1, send=0, transmission=successfully
+
+time=11810, port=1, send=1, transmission=successfully
+
+time=11820, port=1, send=1, transmission=successfully
+
+time=11830, port=1, send=1, transmission=successfully
+
+time=11840, port=1, send=1, transmission=successfully
+
+time=11850, port=1, send=0, transmission=successfully
+
+time=11860, port=1, send=1, transmission=successfully
+
+time=11870, port=1, send=0, transmission=successfully
+
+time=11880, port=1, send=0, transmission=successfully
+
+time=11890, port=1, send=0, transmission=successfully
+
+time=11900, port=1, send=0, transmission=successfully
+
+time=11910, port=1, send=1, transmission=successfully
+
+time=11920, port=1, send=1, transmission=successfully
+
+time=11930, port=1, send=1, transmission=successfully
+
+time=11940, port=1, send=1, transmission=successfully
+
+time=11950, port=1, send=1, transmission=successfully
+
+time=11960, port=1, send=1, transmission=successfully
+
+time=11970, port=1, send=0, transmission=successfully
+
+time=11980, port=1, send=0, transmission=successfully
+
+time=11990, port=1, send=0, transmission=successfully
+
+time=12000, port=1, send=1, transmission=successfully
+
+time=12010, port=1, send=0, transmission=successfully
+
+time=12020, port=1, send=0, transmission=successfully
+
+time=12030, port=1, send=1, transmission=successfully
+
+time=12040, port=1, send=1, transmission=successfully
+
+time=12050, port=1, send=0, transmission=successfully
+
+time=12060, port=1, send=1, transmission=successfully
+
+time=12070, port=1, send=0, transmission=successfully
+
+time=12080, port=1, send=1, transmission=successfully
+
+time=12090, port=1, send=1, transmission=successfully
+
+time=12100, port=1, send=0, transmission=successfully
+
+time=12110, port=1, send=0, transmission=successfully
+
+time=12120, port=1, send=null, cause=data_ended, transmission=successfully
+
+time=12135, port=1, receive=1
+
+time=12145, port=1, receive=1
+
+time=12155, port=1, receive=0
+
+time=12165, port=1, receive=0
+
+time=12175, port=1, receive=0
+
+time=12185, port=1, receive=1
+
+time=12195, port=1, receive=0
+
+time=12205, port=1, receive=1
+
+time=12215, port=1, receive=1
+
+time=12225, port=1, receive=1
+
+time=12235, port=1, receive=0
+
+time=12245, port=1, receive=1
+
+time=12255, port=1, receive=0
+
+time=12265, port=1, receive=1
+
+time=12275, port=1, receive=1
+
+time=12285, port=1, receive=0
+
+time=12295, port=1, receive=1
+
+time=12305, port=1, receive=1
+
+time=12315, port=1, receive=1
+
+time=12325, port=1, receive=1
+
+time=12335, port=1, receive=0
+
+time=12345, port=1, receive=0
+
+time=12355, port=1, receive=1
+
+time=12365, port=1, receive=0
+
+time=12375, port=1, receive=1
+
+time=12385, port=1, receive=1
+
+time=12395, port=1, receive=0
+
+time=12405, port=1, receive=1
+
+time=12415, port=1, receive=0
+
+time=12425, port=1, receive=0
+
+time=12435, port=1, receive=1
+
+time=12445, port=1, receive=0
+
+time=12455, port=1, receive=0
+
+time=12465, port=1, receive=0
+
+time=12475, port=1, receive=0
+
+time=12485, port=1, receive=0
+
+time=12495, port=1, receive=1
+
+time=12505, port=1, receive=1
+
+time=12515, port=1, receive=0
+
+time=12525, port=1, receive=1
+
+time=12535, port=1, receive=0
+
+time=12545, port=1, receive=0
+
+time=12555, port=1, receive=0
+
+time=12565, port=1, receive=0
+
+time=12575, port=1, receive=1
+
+time=12585, port=1, receive=1
+
+time=12595, port=1, receive=1
+
+time=12605, port=1, receive=1
+
+time=12615, port=1, receive=0
+
+time=12625, port=1, receive=0
+
+time=12635, port=1, receive=0
+
+time=12645, port=1, receive=0
+
+time=12655, port=1, receive=1
+
+time=12665, port=1, receive=0
+
+time=12675, port=1, receive=1
+
+time=12685, port=1, receive=0
+
+time=12695, port=1, receive=0
+
+time=12705, port=1, receive=0
+
+time=12715, port=1, receive=0
+
+time=12725, port=1, receive=0
+
+time=12735, port=1, receive=0
+
+time=12745, port=1, receive=1
+
+time=12755, port=1, receive=1
+
+time=12765, port=1, receive=0
+
+time=12775, port=1, receive=0
+
+time=12785, port=1, receive=1
+
+time=12795, port=1, receive=1
+
+time=12805, port=1, receive=1
+
+time=12815, port=1, receive=1
+
+time=12825, port=1, receive=0
+
+time=12835, port=1, receive=1
+
+time=12845, port=1, receive=0
+
+time=12855, port=1, receive=0
+
+time=12865, port=1, receive=0
+
+time=12875, port=1, receive=0
+
+time=12885, port=1, receive=1
+
+time=12895, port=1, receive=1
+
+time=12905, port=1, receive=1
+
+time=12915, port=1, receive=1
+
+time=12925, port=1, receive=1
+
+time=12935, port=1, receive=0
+
+time=12945, port=1, receive=0
+
+time=12955, port=1, receive=0
+
+time=12965, port=1, receive=0
+
+time=12975, port=1, receive=1
+
+time=12985, port=1, receive=0
+
+time=12995, port=1, receive=1
+
+time=13005, port=1, receive=0
+
+time=13015, port=1, receive=0
+
+time=13025, port=1, receive=0
+
+time=13035, port=1, receive=0
+
+time=13045, port=1, receive=0
+
+time=13055, port=1, receive=0
+
+time=13065, port=1, receive=1
+
+time=13075, port=1, receive=1
+
+time=13085, port=1, receive=0
+
+time=13095, port=1, receive=0
+
+time=13105, port=1, receive=1
+
+time=13115, port=1, receive=1
+
+time=13125, port=1, receive=1
+
+time=13135, port=1, receive=1
+
+time=13145, port=1, receive=0
+
+time=13155, port=1, receive=1
+
+time=13165, port=1, receive=0
+
+time=13175, port=1, receive=0
+
+time=13185, port=1, receive=0
+
+time=13195, port=1, receive=1
+
+time=13205, port=1, receive=1
+
+time=13215, port=1, receive=0
+
+time=13225, port=1, receive=0
+
+time=13235, port=1, receive=1
+
+time=13245, port=1, receive=0
+
+time=13255, port=1, receive=0
+
+time=13265, port=1, receive=0
+
+time=13275, port=1, receive=0
+
+time=13285, port=1, receive=0
+
+time=13295, port=1, receive=0
+
+time=13305, port=1, receive=0
+
+time=13315, port=1, receive=0
+
+time=13325, port=1, receive=0
+
+time=13335, port=1, receive=0
+
+time=13345, port=1, receive=0
+
+time=13355, port=1, receive=0
+
+time=13365, port=1, receive=0
+
+time=13375, port=1, receive=0
+
+time=13385, port=1, receive=0
+
+time=13395, port=1, receive=0
+
+time=13405, port=1, receive=0
+
+time=13415, port=1, receive=0
+
+time=13425, port=1, receive=0
+
+time=13435, port=1, receive=0
+
+time=13445, port=1, receive=0
+
+time=13455, port=1, receive=0
+
+time=13465, port=1, receive=0
+
+time=13475, port=1, receive=1
+
+time=13485, port=1, receive=0
+
+time=13495, port=1, receive=0
+
+time=13505, port=1, receive=0
+
+time=13515, port=1, receive=0
+
+time=13525, port=1, receive=1
+
+time=13535, port=1, receive=0
+
+time=13545, port=1, receive=0
+
+time=13555, port=1, receive=0
+
+time=13565, port=1, receive=1
+
+time=13575, port=1, receive=0
+
+time=13585, port=1, receive=0
+
+time=13595, port=1, receive=0
+
+time=13605, port=1, receive=1
+
+time=13615, port=1, receive=0
+
+time=13625, port=1, receive=0
+
+time=13635, port=1, receive=0
+
+time=13645, port=1, receive=1
+
+time=13655, port=1, receive=0
+
+time=13665, port=1, receive=0
+
+time=13675, port=1, receive=0
+
+time=13685, port=1, receive=0
+
+time=13695, port=1, receive=1
+
+time=13705, port=1, receive=0
+
+time=13715, port=1, receive=1
+
+time=13725, port=1, receive=0
+
+time=13735, port=1, receive=0
+
+time=13745, port=1, receive=0
+
+time=13755, port=1, receive=0
+
+time=13765, port=1, receive=0
+
+time=13775, port=1, receive=0
+
+time=13785, port=1, receive=1
+
+time=13795, port=1, receive=1
+
+time=13805, port=1, receive=0
+
+time=13815, port=1, receive=0
+
+time=13825, port=1, receive=1
+
+time=13835, port=1, receive=1
+
+time=13845, port=1, receive=1
+
+time=13855, port=1, receive=1
+
+time=13865, port=1, receive=0
+
+time=13875, port=1, receive=1
+
+time=13885, port=1, receive=0
+
+time=13895, port=1, receive=0
+
+time=13905, port=1, receive=0
+
+time=13915, port=1, receive=0
+
+time=13925, port=1, receive=1
+
+time=13935, port=1, receive=1
+
+time=13945, port=1, receive=1
+
+time=13955, port=1, receive=1
+
+time=13965, port=1, receive=1
+
+time=13975, port=1, receive=0
+
+time=13985, port=1, receive=0
+
+time=13995, port=1, receive=0
+
+time=14005, port=1, receive=0
+
+time=14015, port=1, receive=1
+
+time=14025, port=1, receive=0
+
+time=14035, port=1, receive=1
+
+time=14045, port=1, receive=0
+
+time=14055, port=1, receive=0
+
+time=14065, port=1, receive=0
+
+time=14075, port=1, receive=0
+
+time=14085, port=1, receive=0
+
+time=14095, port=1, receive=0
+
+time=14105, port=1, receive=1
+
+time=14115, port=1, receive=1
+
+time=14125, port=1, receive=0
+
+time=14135, port=1, receive=0
+
+time=14145, port=1, receive=1
+
+time=14155, port=1, receive=1
+
+time=14165, port=1, receive=1
+
+time=14175, port=1, receive=1
+
+time=14185, port=1, receive=0
+
+time=14195, port=1, receive=1
+
+time=14205, port=1, receive=0
+
+time=14215, port=1, receive=0
+
+time=14225, port=1, receive=0
+
+time=14235, port=1, receive=1
+
+time=14245, port=1, receive=1
+
+time=14255, port=1, receive=0
+
+time=14265, port=1, receive=0
+
+time=14275, port=1, receive=1
+
+time=14285, port=1, receive=0
+
+time=14295, port=1, receive=0
+
+time=14305, port=1, receive=0
+
+time=14315, port=1, receive=0
+
+time=14325, port=1, receive=0
+
+time=14335, port=1, receive=0
+
+time=14345, port=1, receive=0
+
+time=14355, port=1, receive=0
+
+time=14365, port=1, receive=0
+
+time=14375, port=1, receive=0
+
+time=14385, port=1, receive=0
+
+time=14395, port=1, receive=0
+
+time=14405, port=1, receive=0
+
+time=14415, port=1, receive=0
+
+time=14425, port=1, receive=0
+
+time=14435, port=1, receive=0
+
+time=14445, port=1, receive=0
+
+time=14455, port=1, receive=0
+
+time=14465, port=1, receive=0
+
+time=14475, port=1, receive=0
+
+time=14485, port=1, receive=0
+
+time=14495, port=1, receive=0
+
+time=14505, port=1, receive=0
+
+time=14515, port=1, receive=1
+
+time=14525, port=1, receive=0
+
+time=14535, port=1, receive=0
+
+time=14545, port=1, receive=0
+
+time=14555, port=1, receive=0
+
+time=14565, port=1, receive=1
+
+time=14575, port=1, receive=0
+
+time=14585, port=1, receive=0
+
+time=14595, port=1, receive=0
+
+time=14605, port=1, receive=1
+
+time=14615, port=1, receive=0
+
+time=14625, port=1, receive=0
+
+time=14635, port=1, receive=0
+
+time=14645, port=1, receive=1
+
+time=14655, port=1, receive=0
+
+time=14665, port=1, receive=0
+
+time=14675, port=1, receive=0
+
+time=14685, port=1, receive=1
+
+time=14695, port=1, receive=0
+
+time=14705, port=1, receive=0
+
+time=14715, port=1, receive=0
+
+time=14725, port=1, receive=1
+
+time=14735, port=1, receive=0
+
+time=14745, port=1, receive=0
+
+time=14755, port=1, receive=0
+
+time=14765, port=1, receive=1
+
+time=14775, port=1, receive=1
+
+time=14785, port=1, receive=0
+
+time=14795, port=1, receive=1
+
+time=14805, port=1, receive=0
+
+time=14815, port=1, receive=1
+
+time=14825, port=1, receive=0
+
+time=14835, port=1, receive=0
+
+time=14845, port=1, receive=0
+
+time=14855, port=1, receive=null, cause=data_ended
+
+time=15000, port=1, send=1, transmission=successfully
+
+time=15010, port=1, send=1, transmission=successfully
+
+time=15020, port=1, send=1, transmission=successfully
+
+time=15030, port=1, send=1, transmission=successfully
+
+time=15040, port=1, send=1, transmission=successfully
+
+time=15050, port=1, send=1, transmission=successfully
+
+time=15060, port=1, send=1, transmission=successfully
+
+time=15070, port=1, send=1, transmission=successfully
+
+time=15080, port=1, send=1, transmission=successfully
+
+time=15090, port=1, send=1, transmission=successfully
+
+time=15100, port=1, send=1, transmission=successfully
+
+time=15110, port=1, send=1, transmission=successfully
+
+time=15120, port=1, send=1, transmission=successfully
+
+time=15130, port=1, send=1, transmission=successfully
+
+time=15140, port=1, send=1, transmission=successfully
+
+time=15150, port=1, send=1, transmission=successfully
+
+time=15160, port=1, send=1, transmission=successfully
+
+time=15170, port=1, send=1, transmission=successfully
+
+time=15180, port=1, send=0, transmission=successfully
+
+time=15190, port=1, send=0, transmission=successfully
+
+time=15200, port=1, send=0, transmission=successfully
+
+time=15210, port=1, send=1, transmission=successfully
+
+time=15220, port=1, send=0, transmission=successfully
+
+time=15230, port=1, send=1, transmission=successfully
+
+time=15240, port=1, send=1, transmission=successfully
+
+time=15250, port=1, send=1, transmission=successfully
+
+time=15260, port=1, send=0, transmission=successfully
+
+time=15270, port=1, send=1, transmission=successfully
+
+time=15280, port=1, send=0, transmission=successfully
+
+time=15290, port=1, send=1, transmission=successfully
+
+time=15300, port=1, send=1, transmission=successfully
+
+time=15310, port=1, send=0, transmission=successfully
+
+time=15320, port=1, send=0, transmission=successfully
+
+time=15330, port=1, send=0, transmission=successfully
+
+time=15340, port=1, send=0, transmission=successfully
+
+time=15350, port=1, send=0, transmission=successfully
+
+time=15360, port=1, send=1, transmission=successfully
+
+time=15370, port=1, send=0, transmission=successfully
+
+time=15380, port=1, send=0, transmission=successfully
+
+time=15390, port=1, send=0, transmission=successfully
+
+time=15400, port=1, send=0, transmission=successfully
+
+time=15410, port=1, send=0, transmission=successfully
+
+time=15420, port=1, send=0, transmission=successfully
+
+time=15430, port=1, send=0, transmission=successfully
+
+time=15440, port=1, send=1, transmission=successfully
+
+time=15450, port=1, send=0, transmission=successfully
+
+time=15460, port=1, send=1, transmission=successfully
+
+time=15470, port=1, send=0, transmission=successfully
+
+time=15480, port=1, send=0, transmission=successfully
+
+time=15490, port=1, send=0, transmission=successfully
+
+time=15500, port=1, send=0, transmission=successfully
+
+time=15510, port=1, send=0, transmission=successfully
+
+time=15520, port=1, send=1, transmission=successfully
+
+time=15530, port=1, send=0, transmission=successfully
+
+time=15540, port=1, send=1, transmission=successfully
+
+time=15550, port=1, send=0, transmission=successfully
+
+time=15560, port=1, send=0, transmission=successfully
+
+time=15570, port=1, send=0, transmission=successfully
+
+time=15580, port=1, send=0, transmission=successfully
+
+time=15590, port=1, send=1, transmission=successfully
+
+time=15600, port=1, send=1, transmission=successfully
+
+time=15610, port=1, send=0, transmission=successfully
+
+time=15620, port=1, send=1, transmission=successfully
+
+time=15630, port=1, send=1, transmission=successfully
+
+time=15640, port=1, send=0, transmission=successfully
+
+time=15650, port=1, send=0, transmission=successfully
+
+time=15660, port=1, send=0, transmission=successfully
+
+time=15670, port=1, send=1, transmission=successfully
+
+time=15680, port=1, send=1, transmission=successfully
+
+time=15690, port=1, send=0, transmission=successfully
+
+time=15700, port=1, send=0, transmission=successfully
+
+time=15710, port=1, send=1, transmission=successfully
+
+time=15720, port=1, send=0, transmission=successfully
+
+time=15730, port=1, send=0, transmission=successfully
+
+time=15740, port=1, send=0, transmission=successfully
+
+time=15750, port=1, send=1, transmission=successfully
+
+time=15760, port=1, send=1, transmission=successfully
+
+time=15770, port=1, send=0, transmission=successfully
+
+time=15780, port=1, send=1, transmission=successfully
+
+time=15790, port=1, send=0, transmission=successfully
+
+time=15800, port=1, send=0, transmission=successfully
+
+time=15810, port=1, send=0, transmission=successfully
+
+time=15820, port=1, send=0, transmission=successfully
+
+time=15830, port=1, send=0, transmission=successfully
+
+time=15840, port=1, send=1, transmission=successfully
+
+time=15850, port=1, send=0, transmission=successfully
+
+time=15860, port=1, send=1, transmission=successfully
+
+time=15870, port=1, send=0, transmission=successfully
+
+time=15880, port=1, send=0, transmission=successfully
+
+time=15890, port=1, send=0, transmission=successfully
+
+time=15900, port=1, send=0, transmission=successfully
+
+time=15910, port=1, send=0, transmission=successfully
+
+time=15920, port=1, send=0, transmission=successfully
+
+time=15930, port=1, send=1, transmission=successfully
+
+time=15940, port=1, send=1, transmission=successfully
+
+time=15950, port=1, send=0, transmission=successfully
+
+time=15960, port=1, send=0, transmission=successfully
+
+time=15970, port=1, send=1, transmission=successfully
+
+time=15980, port=1, send=1, transmission=successfully
+
+time=15990, port=1, send=1, transmission=successfully
+
+time=16000, port=1, send=1, transmission=successfully
+
+time=16010, port=1, send=0, transmission=successfully
+
+time=16020, port=1, send=1, transmission=successfully
+
+time=16030, port=1, send=0, transmission=successfully
+
+time=16040, port=1, send=0, transmission=successfully
+
+time=16050, port=1, send=0, transmission=successfully
+
+time=16060, port=1, send=1, transmission=successfully
+
+time=16070, port=1, send=0, transmission=successfully
+
+time=16080, port=1, send=1, transmission=successfully
+
+time=16090, port=1, send=1, transmission=successfully
+
+time=16100, port=1, send=0, transmission=successfully
+
+time=16110, port=1, send=0, transmission=successfully
+
+time=16120, port=1, send=0, transmission=successfully
+
+time=16130, port=1, send=0, transmission=successfully
+
+time=16140, port=1, send=0, transmission=successfully
+
+time=16150, port=1, send=0, transmission=successfully
+
+time=16160, port=1, send=1, transmission=successfully
+
+time=16170, port=1, send=0, transmission=successfully
+
+time=16180, port=1, send=1, transmission=successfully
+
+time=16190, port=1, send=0, transmission=successfully
+
+time=16200, port=1, send=0, transmission=successfully
+
+time=16210, port=1, send=0, transmission=successfully
+
+time=16220, port=1, send=0, transmission=successfully
+
+time=16230, port=1, send=1, transmission=successfully
+
+time=16240, port=1, send=1, transmission=successfully
+
+time=16250, port=1, send=0, transmission=successfully
+
+time=16260, port=1, send=1, transmission=successfully
+
+time=16270, port=1, send=1, transmission=successfully
+
+time=16280, port=1, send=0, transmission=successfully
+
+time=16290, port=1, send=0, transmission=successfully
+
+time=16300, port=1, send=0, transmission=successfully
+
+time=16310, port=1, send=1, transmission=successfully
+
+time=16320, port=1, send=1, transmission=successfully
+
+time=16330, port=1, send=0, transmission=successfully
+
+time=16340, port=1, send=0, transmission=successfully
+
+time=16350, port=1, send=1, transmission=successfully
+
+time=16360, port=1, send=0, transmission=successfully
+
+time=16370, port=1, send=0, transmission=successfully
+
+time=16380, port=1, send=0, transmission=successfully
+
+time=16390, port=1, send=1, transmission=successfully
+
+time=16400, port=1, send=1, transmission=successfully
+
+time=16410, port=1, send=0, transmission=successfully
+
+time=16420, port=1, send=1, transmission=successfully
+
+time=16430, port=1, send=0, transmission=successfully
+
+time=16440, port=1, send=0, transmission=successfully
+
+time=16450, port=1, send=0, transmission=successfully
+
+time=16460, port=1, send=0, transmission=successfully
+
+time=16470, port=1, send=0, transmission=successfully
+
+time=16480, port=1, send=1, transmission=successfully
+
+time=16490, port=1, send=0, transmission=successfully
+
+time=16500, port=1, send=1, transmission=successfully
+
+time=16510, port=1, send=0, transmission=successfully
+
+time=16520, port=1, send=0, transmission=successfully
+
+time=16530, port=1, send=0, transmission=successfully
+
+time=16540, port=1, send=0, transmission=successfully
+
+time=16550, port=1, send=0, transmission=successfully
+
+time=16560, port=1, send=0, transmission=successfully
+
+time=16570, port=1, send=1, transmission=successfully
+
+time=16580, port=1, send=1, transmission=successfully
+
+time=16590, port=1, send=0, transmission=successfully
+
+time=16600, port=1, send=0, transmission=successfully
+
+time=16610, port=1, send=1, transmission=successfully
+
+time=16620, port=1, send=1, transmission=successfully
+
+time=16630, port=1, send=1, transmission=successfully
+
+time=16640, port=1, send=1, transmission=successfully
+
+time=16650, port=1, send=0, transmission=successfully
+
+time=16660, port=1, send=1, transmission=successfully
+
+time=16670, port=1, send=0, transmission=successfully
+
+time=16680, port=1, send=0, transmission=successfully
+
+time=16690, port=1, send=0, transmission=successfully
+
+time=16700, port=1, send=1, transmission=successfully
+
+time=16710, port=1, send=0, transmission=successfully
+
+time=16720, port=1, send=1, transmission=successfully
+
+time=16730, port=1, send=1, transmission=successfully
+
+time=16740, port=1, send=0, transmission=successfully
+
+time=16750, port=1, send=0, transmission=successfully
+
+time=16760, port=1, send=0, transmission=successfully
+
+time=16770, port=1, send=0, transmission=successfully
+
+time=16780, port=1, send=1, transmission=successfully
+
+time=16790, port=1, send=0, transmission=successfully
+
+time=16800, port=1, send=0, transmission=successfully
+
+time=16810, port=1, send=1, transmission=successfully
+
+time=16820, port=1, send=0, transmission=successfully
+
+time=16830, port=1, send=1, transmission=successfully
+
+time=16840, port=1, send=1, transmission=successfully
+
+time=16850, port=1, send=1, transmission=successfully
+
+time=16860, port=1, send=0, transmission=successfully
+
+time=16870, port=1, send=0, transmission=successfully
+
+time=16880, port=1, send=1, transmission=successfully
+
+time=16890, port=1, send=1, transmission=successfully
+
+time=16900, port=1, send=0, transmission=successfully
+
+time=16910, port=1, send=1, transmission=successfully
+
+time=16920, port=1, send=null, cause=data_ended, transmission=successfully
+
+time=17240, port=1, receive=1
+
+time=17250, port=1, receive=1
+
+time=17260, port=1, receive=0
+
+time=17270, port=1, receive=0
+
+time=17280, port=1, receive=0
+
+time=17290, port=1, receive=1
+
+time=17300, port=1, receive=0
+
+time=17310, port=1, receive=1
+
+time=17320, port=1, receive=1
+
+time=17330, port=1, receive=1
+
+time=17340, port=1, receive=0
+
+time=17350, port=1, receive=1
+
+time=17360, port=1, receive=0
+
+time=17370, port=1, receive=1
+
+time=17380, port=1, receive=1
+
+time=17390, port=1, receive=0
+
+time=17400, port=1, receive=1
+
+time=17410, port=1, receive=0
+
+time=17420, port=1, receive=1
+
+time=17430, port=1, receive=0
+
+time=17440, port=1, receive=0
+
+time=17450, port=1, receive=1
+
+time=17460, port=1, receive=0
+
+time=17470, port=1, receive=0
+
+time=17480, port=1, receive=1
+
+time=17490, port=1, receive=0
+
+time=17500, port=1, receive=1
+
+time=17510, port=1, receive=1
+
+time=17520, port=1, receive=0
+
+time=17530, port=1, receive=1
+
+time=17540, port=1, receive=0
+
+time=17550, port=1, receive=1
+
+time=17560, port=1, receive=0
+
+time=17570, port=1, receive=0
+
+time=17580, port=1, receive=0
+
+time=17590, port=1, receive=0
+
+time=17600, port=1, receive=1
+
+time=17610, port=1, receive=0
+
+time=17620, port=1, receive=0
+
+time=17630, port=1, receive=0
+
+time=17640, port=1, receive=0
+
+time=17650, port=1, receive=0
+
+time=17660, port=1, receive=0
+
+time=17670, port=1, receive=0
+
+time=17680, port=1, receive=1
+
+time=17690, port=1, receive=0
+
+time=17700, port=1, receive=1
+
+time=17710, port=1, receive=0
+
+time=17720, port=1, receive=0
+
+time=17730, port=1, receive=0
+
+time=17740, port=1, receive=0
+
+time=17750, port=1, receive=0
+
+time=17760, port=1, receive=1
+
+time=17770, port=1, receive=0
+
+time=17780, port=1, receive=1
+
+time=17790, port=1, receive=0
+
+time=17800, port=1, receive=0
+
+time=17810, port=1, receive=0
+
+time=17820, port=1, receive=0
+
+time=17830, port=1, receive=1
+
+time=17840, port=1, receive=1
+
+time=17850, port=1, receive=0
+
+time=17860, port=1, receive=1
+
+time=17870, port=1, receive=1
+
+time=17880, port=1, receive=0
+
+time=17890, port=1, receive=0
+
+time=17900, port=1, receive=0
+
+time=17910, port=1, receive=1
+
+time=17920, port=1, receive=1
+
+time=17930, port=1, receive=0
+
+time=17940, port=1, receive=0
+
+time=17950, port=1, receive=1
+
+time=17960, port=1, receive=0
+
+time=17970, port=1, receive=0
+
+time=17980, port=1, receive=0
+
+time=17990, port=1, receive=1
+
+time=18000, port=1, receive=1
+
+time=18010, port=1, receive=0
+
+time=18020, port=1, receive=1
+
+time=18030, port=1, receive=1
+
+time=18040, port=1, receive=0
+
+time=18050, port=1, receive=0
+
+time=18060, port=1, receive=0
+
+time=18070, port=1, receive=0
+
+time=18080, port=1, receive=1
+
+time=18090, port=1, receive=0
+
+time=18100, port=1, receive=1
+
+time=18110, port=1, receive=0
+
+time=18120, port=1, receive=0
+
+time=18130, port=1, receive=0
+
+time=18140, port=1, receive=0
+
+time=18150, port=1, receive=0
+
+time=18160, port=1, receive=0
+
+time=18170, port=1, receive=1
+
+time=18180, port=1, receive=1
+
+time=18190, port=1, receive=0
+
+time=18200, port=1, receive=0
+
+time=18210, port=1, receive=1
+
+time=18220, port=1, receive=1
+
+time=18230, port=1, receive=1
+
+time=18240, port=1, receive=1
+
+time=18250, port=1, receive=0
+
+time=18260, port=1, receive=1
+
+time=18270, port=1, receive=0
+
+time=18280, port=1, receive=0
+
+time=18290, port=1, receive=0
+
+time=18300, port=1, receive=1
+
+time=18310, port=1, receive=0
+
+time=18320, port=1, receive=1
+
+time=18330, port=1, receive=1
+
+time=18340, port=1, receive=0
+
+time=18350, port=1, receive=0
+
+time=18360, port=1, receive=0
+
+time=18370, port=1, receive=0
+
+time=18380, port=1, receive=0
+
+time=18390, port=1, receive=0
+
+time=18400, port=1, receive=1
+
+time=18410, port=1, receive=0
+
+time=18420, port=1, receive=1
+
+time=18430, port=1, receive=0
+
+time=18440, port=1, receive=0
+
+time=18450, port=1, receive=0
+
+time=18460, port=1, receive=0
+
+time=18470, port=1, receive=1
+
+time=18480, port=1, receive=1
+
+time=18490, port=1, receive=0
+
+time=18500, port=1, receive=1
+
+time=18510, port=1, receive=1
+
+time=18520, port=1, receive=0
+
+time=18530, port=1, receive=0
+
+time=18540, port=1, receive=0
+
+time=18550, port=1, receive=1
+
+time=18560, port=1, receive=1
+
+time=18570, port=1, receive=0
+
+time=18580, port=1, receive=0
+
+time=18590, port=1, receive=1
+
+time=18600, port=1, receive=0
+
+time=18610, port=1, receive=0
+
+time=18620, port=1, receive=0
+
+time=18630, port=1, receive=1
+
+time=18640, port=1, receive=1
+
+time=18650, port=1, receive=0
+
+time=18660, port=1, receive=1
+
+time=18670, port=1, receive=1
+
+time=18680, port=1, receive=0
+
+time=18690, port=1, receive=0
+
+time=18700, port=1, receive=0
+
+time=18710, port=1, receive=0
+
+time=18720, port=1, receive=1
+
+time=18730, port=1, receive=0
+
+time=18740, port=1, receive=1
+
+time=18750, port=1, receive=0
+
+time=18760, port=1, receive=0
+
+time=18770, port=1, receive=0
+
+time=18780, port=1, receive=0
+
+time=18790, port=1, receive=0
+
+time=18800, port=1, receive=0
+
+time=18810, port=1, receive=1
+
+time=18820, port=1, receive=1
+
+time=18830, port=1, receive=0
+
+time=18840, port=1, receive=0
+
+time=18850, port=1, receive=1
+
+time=18860, port=1, receive=1
+
+time=18870, port=1, receive=1
+
+time=18880, port=1, receive=1
+
+time=18890, port=1, receive=0
+
+time=18900, port=1, receive=1
+
+time=18910, port=1, receive=0
+
+time=18920, port=1, receive=0
+
+time=18930, port=1, receive=0
+
+time=18940, port=1, receive=1
+
+time=18950, port=1, receive=0
+
+time=18960, port=1, receive=1
+
+time=18970, port=1, receive=1
+
+time=18980, port=1, receive=0
+
+time=18990, port=1, receive=0
+
+time=19000, port=1, receive=1
+
+time=19010, port=1, receive=0
+
+time=19020, port=1, receive=0
+
+time=19030, port=1, receive=0
+
+time=19040, port=1, receive=1
+
+time=19050, port=1, receive=1
+
+time=19060, port=1, receive=1
+
+time=19070, port=1, receive=1
+
+time=19080, port=1, receive=1
+
+time=19090, port=1, receive=0
+
+time=19100, port=1, receive=0
+
+time=19110, port=1, receive=1
+
+time=19120, port=1, receive=1
+
+time=19130, port=1, receive=1
+
+time=19140, port=1, receive=0
+
+time=19150, port=1, receive=0
+
+time=19150, port=1, send=1, transmission=successfully
+
+time=19150, port=1, send=0, transmission=successfully
+
+time=19160, port=1, receive=null, cause=data_ended
+
+time=19160, port=1, send=1, transmission=successfully
+
+time=19170, port=1, send=0, transmission=successfully
+
+time=19180, port=1, send=0, transmission=successfully
+
+time=19190, port=1, send=1, transmission=successfully
+
+time=19200, port=1, send=0, transmission=successfully
+
+time=19210, port=1, send=0, transmission=successfully
+
+time=19220, port=1, send=1, transmission=successfully
+
+time=19230, port=1, send=0, transmission=successfully
+
+time=19240, port=1, send=1, transmission=successfully
+
+time=19250, port=1, send=1, transmission=successfully
+
+time=19260, port=1, send=0, transmission=successfully
+
+time=19270, port=1, send=1, transmission=successfully
+
+time=19280, port=1, send=0, transmission=successfully
+
+time=19290, port=1, send=1, transmission=successfully
+
+time=19300, port=1, send=1, transmission=successfully
+
+time=19310, port=1, send=1, transmission=successfully
+
+time=19320, port=1, send=0, transmission=successfully
+
+time=19330, port=1, send=0, transmission=successfully
+
+time=19340, port=1, send=0, transmission=successfully
+
+time=19350, port=1, send=1, transmission=successfully
+
+time=19360, port=1, send=0, transmission=successfully
+
+time=19370, port=1, send=1, transmission=successfully
+
+time=19380, port=1, send=1, transmission=successfully
+
+time=19390, port=1, send=1, transmission=successfully
+
+time=19400, port=1, send=0, transmission=successfully
+
+time=19410, port=1, send=1, transmission=successfully
+
+time=19420, port=1, send=0, transmission=successfully
+
+time=19430, port=1, send=1, transmission=successfully
+
+time=19440, port=1, send=1, transmission=successfully
+
+time=19450, port=1, send=0, transmission=successfully
+
+time=19460, port=1, send=0, transmission=successfully
+
+time=19470, port=1, send=0, transmission=successfully
+
+time=19480, port=1, send=0, transmission=successfully
+
+time=19490, port=1, send=0, transmission=successfully
+
+time=19500, port=1, send=1, transmission=successfully
+
+time=19510, port=1, send=1, transmission=successfully
+
+time=19520, port=1, send=1, transmission=successfully
+
+time=19530, port=1, send=1, transmission=successfully
+
+time=19540, port=1, send=0, transmission=successfully
+
+time=19550, port=1, send=0, transmission=successfully
+
+time=19560, port=1, send=0, transmission=successfully
+
+time=19570, port=1, send=1, transmission=successfully
+
+time=19580, port=1, send=0, transmission=successfully
+
+time=19590, port=1, send=0, transmission=successfully
+
+time=19600, port=1, send=0, transmission=successfully
+
+time=19610, port=1, send=1, transmission=successfully
+
+time=19620, port=1, send=0, transmission=successfully
+
+time=19630, port=1, send=0, transmission=successfully
+
+time=19640, port=1, send=0, transmission=successfully
+
+time=19650, port=1, send=0, transmission=successfully
+
+time=19660, port=1, send=1, transmission=successfully
+
+time=19670, port=1, send=0, transmission=successfully
+
+time=19680, port=1, send=1, transmission=successfully
+
+time=19690, port=1, send=0, transmission=successfully
+
+time=19700, port=1, send=0, transmission=successfully
+
+time=19710, port=1, send=0, transmission=successfully
+
+time=19720, port=1, send=0, transmission=successfully
+
+time=19730, port=1, send=0, transmission=successfully
+
+time=19740, port=1, send=0, transmission=successfully
+
+time=19750, port=1, send=1, transmission=successfully
+
+time=19760, port=1, send=1, transmission=successfully
+
+time=19770, port=1, send=0, transmission=successfully
+
+time=19780, port=1, send=0, transmission=successfully
+
+time=19790, port=1, send=1, transmission=successfully
+
+time=19800, port=1, send=1, transmission=successfully
+
+time=19810, port=1, send=1, transmission=successfully
+
+time=19820, port=1, send=1, transmission=successfully
+
+time=19830, port=1, send=0, transmission=successfully
+
+time=19840, port=1, send=1, transmission=successfully
+
+time=19850, port=1, send=0, transmission=successfully
+
+time=19860, port=1, send=0, transmission=successfully
+
+time=19870, port=1, send=0, transmission=successfully
+
+time=19880, port=1, send=1, transmission=successfully
+
+time=19890, port=1, send=0, transmission=successfully
+
+time=19900, port=1, send=1, transmission=successfully
+
+time=19910, port=1, send=1, transmission=successfully
+
+time=19920, port=1, send=0, transmission=successfully
+
+time=19930, port=1, send=0, transmission=successfully
+
+time=19940, port=1, send=0, transmission=successfully
+
+time=19950, port=1, send=0, transmission=successfully
+
+time=19960, port=1, send=0, transmission=successfully
+
+time=19970, port=1, send=0, transmission=successfully
+
+time=19980, port=1, send=1, transmission=successfully
+
+time=19990, port=1, send=0, transmission=successfully
+
+time=20000, port=1, send=1, transmission=successfully
+
+time=20010, port=1, send=0, transmission=successfully
+
+time=20020, port=1, send=0, transmission=successfully
+
+time=20030, port=1, send=0, transmission=successfully
+
+time=20040, port=1, send=0, transmission=successfully
+
+time=20050, port=1, send=0, transmission=successfully
+
+time=20060, port=1, send=0, transmission=successfully
+
+time=20070, port=1, send=1, transmission=successfully
+
+time=20080, port=1, send=1, transmission=successfully
+
+time=20090, port=1, send=0, transmission=successfully
+
+time=20100, port=1, send=0, transmission=successfully
+
+time=20110, port=1, send=1, transmission=successfully
+
+time=20120, port=1, send=1, transmission=successfully
+
+time=20130, port=1, send=1, transmission=successfully
+
+time=20140, port=1, send=1, transmission=successfully
+
+time=20150, port=1, send=0, transmission=successfully
+
+time=20160, port=1, send=1, transmission=successfully
+
+time=20170, port=1, send=0, transmission=successfully
+
+time=20180, port=1, send=0, transmission=successfully
+
+time=20190, port=1, send=0, transmission=successfully
+
+time=20200, port=1, send=0, transmission=successfully
+
+time=20210, port=1, send=1, transmission=successfully
+
+time=20220, port=1, send=1, transmission=successfully
+
+time=20230, port=1, send=1, transmission=successfully
+
+time=20240, port=1, send=1, transmission=successfully
+
+time=20250, port=1, send=1, transmission=successfully
+
+time=20260, port=1, send=0, transmission=successfully
+
+time=20270, port=1, send=0, transmission=successfully
+
+time=20280, port=1, send=0, transmission=successfully
+
+time=20290, port=1, send=0, transmission=successfully
+
+time=20300, port=1, send=0, transmission=successfully
+
+time=20310, port=1, send=0, transmission=successfully
+
+time=20320, port=1, send=0, transmission=successfully
+
+time=20330, port=1, send=0, transmission=successfully
+
+time=20340, port=1, send=0, transmission=successfully
+
+time=20350, port=1, send=0, transmission=successfully
+
+time=20360, port=1, send=0, transmission=successfully
+
+time=20370, port=1, send=0, transmission=successfully
+
+time=20380, port=1, send=0, transmission=successfully
+
+time=20390, port=1, send=0, transmission=successfully
+
+time=20400, port=1, send=0, transmission=successfully
+
+time=20410, port=1, send=0, transmission=successfully
+
+time=20420, port=1, send=0, transmission=successfully
+
+time=20430, port=1, send=0, transmission=successfully
+
+time=20440, port=1, send=0, transmission=successfully
+
+time=20450, port=1, send=0, transmission=successfully
+
+time=20460, port=1, send=0, transmission=successfully
+
+time=20470, port=1, send=1, transmission=successfully
+
+time=20480, port=1, send=0, transmission=successfully
+
+time=20490, port=1, send=0, transmission=successfully
+
+time=20500, port=1, send=0, transmission=successfully
+
+time=20510, port=1, send=0, transmission=successfully
+
+time=20520, port=1, send=1, transmission=successfully
+
+time=20530, port=1, send=0, transmission=successfully
+
+time=20540, port=1, send=0, transmission=successfully
+
+time=20550, port=1, send=0, transmission=successfully
+
+time=20560, port=1, send=1, transmission=successfully
+
+time=20570, port=1, send=0, transmission=successfully
+
+time=20580, port=1, send=0, transmission=successfully
+
+time=20590, port=1, send=0, transmission=successfully
+
+time=20600, port=1, send=1, transmission=successfully
+
+time=20610, port=1, send=0, transmission=successfully
+
+time=20620, port=1, send=0, transmission=successfully
+
+time=20630, port=1, send=0, transmission=successfully
+
+time=20640, port=1, send=1, transmission=successfully
+
+time=20650, port=1, send=0, transmission=successfully
+
+time=20660, port=1, send=0, transmission=successfully
+
+time=20670, port=1, send=0, transmission=successfully
+
+time=20680, port=1, send=1, transmission=successfully
+
+time=20690, port=1, send=1, transmission=successfully
+
+time=20700, port=1, send=0, transmission=successfully
+
+time=20710, port=1, send=0, transmission=successfully
+
+time=20720, port=1, send=1, transmission=successfully
+
+time=20730, port=1, send=1, transmission=successfully
+
+time=20740, port=1, send=0, transmission=successfully
+
+time=20750, port=1, send=0, transmission=successfully
+
+time=20760, port=1, send=1, transmission=successfully
+
+time=20770, port=1, send=1, transmission=successfully
+
+time=20780, port=1, send=0, transmission=successfully
+
+time=20790, port=1, send=0, transmission=successfully
+
+time=20800, port=1, send=1, transmission=successfully
+
+time=20810, port=1, send=1, transmission=successfully
+
+time=20820, port=1, send=0, transmission=successfully
+
+time=20830, port=1, send=0, transmission=successfully
+
+time=20840, port=1, send=0, transmission=successfully
+
+time=20850, port=1, send=0, transmission=successfully
+
+time=20860, port=1, send=1, transmission=successfully
+
+time=20870, port=1, send=0, transmission=successfully
+
+time=20880, port=1, send=1, transmission=successfully
+
+time=20890, port=1, send=0, transmission=successfully
+
+time=20900, port=1, send=0, transmission=successfully
+
+time=20910, port=1, send=0, transmission=successfully
+
+time=20920, port=1, send=0, transmission=successfully
+
+time=20930, port=1, send=0, transmission=successfully
+
+time=20940, port=1, send=0, transmission=successfully
+
+time=20950, port=1, send=1, transmission=successfully
+
+time=20960, port=1, send=1, transmission=successfully
+
+time=20970, port=1, send=0, transmission=successfully
+
+time=20980, port=1, send=0, transmission=successfully
+
+time=20990, port=1, send=1, transmission=successfully
+
+time=21000, port=1, send=1, transmission=successfully
+
+time=21010, port=1, send=1, transmission=successfully
+
+time=21020, port=1, send=1, transmission=successfully
+
+time=21030, port=1, send=0, transmission=successfully
+
+time=21040, port=1, send=1, transmission=successfully
+
+time=21050, port=1, send=0, transmission=successfully
+
+time=21060, port=1, send=0, transmission=successfully
+
+time=21070, port=1, send=0, transmission=successfully
+
+time=21080, port=1, send=1, transmission=successfully
+
+time=21090, port=1, send=0, transmission=successfully
+
+time=21100, port=1, send=1, transmission=successfully
+
+time=21110, port=1, send=1, transmission=successfully
+
+time=21120, port=1, send=0, transmission=successfully
+
+time=21130, port=1, send=0, transmission=successfully
+
+time=21140, port=1, send=0, transmission=successfully
+
+time=21150, port=1, send=0, transmission=successfully
+
+time=21160, port=1, send=0, transmission=successfully
+
+time=21170, port=1, send=0, transmission=successfully
+
+time=21180, port=1, send=1, transmission=successfully
+
+time=21190, port=1, send=0, transmission=successfully
+
+time=21200, port=1, send=1, transmission=successfully
+
+time=21210, port=1, send=0, transmission=successfully
+
+time=21220, port=1, send=0, transmission=successfully
+
+time=21230, port=1, send=0, transmission=successfully
+
+time=21240, port=1, send=0, transmission=successfully
+
+time=21250, port=1, send=0, transmission=successfully
+
+time=21260, port=1, send=0, transmission=successfully
+
+time=21270, port=1, send=1, transmission=successfully
+
+time=21280, port=1, send=1, transmission=successfully
+
+time=21290, port=1, send=0, transmission=successfully
+
+time=21300, port=1, send=0, transmission=successfully
+
+time=21310, port=1, send=1, transmission=successfully
+
+time=21320, port=1, send=1, transmission=successfully
+
+time=21330, port=1, send=1, transmission=successfully
+
+time=21340, port=1, send=1, transmission=successfully
+
+time=21350, port=1, send=0, transmission=successfully
+
+time=21360, port=1, send=1, transmission=successfully
+
+time=21370, port=1, send=0, transmission=successfully
+
+time=21380, port=1, send=0, transmission=successfully
+
+time=21390, port=1, send=0, transmission=successfully
+
+time=21400, port=1, send=0, transmission=successfully
+
+time=21410, port=1, send=1, transmission=successfully
+
+time=21420, port=1, send=1, transmission=successfully
+
+time=21430, port=1, send=1, transmission=successfully
+
+time=21440, port=1, send=1, transmission=successfully
+
+time=21450, port=1, send=1, transmission=successfully
+
+time=21460, port=1, send=0, transmission=successfully
+
+time=21470, port=1, send=0, transmission=successfully
+
+time=21480, port=1, send=0, transmission=successfully
+
+time=21490, port=1, send=0, transmission=successfully
+
+time=21500, port=1, send=0, transmission=successfully
+
+time=21510, port=1, send=0, transmission=successfully
+
+time=21520, port=1, send=0, transmission=successfully
+
+time=21530, port=1, send=0, transmission=successfully
+
+time=21540, port=1, send=0, transmission=successfully
+
+time=21550, port=1, send=0, transmission=successfully
+
+time=21560, port=1, send=0, transmission=successfully
+
+time=21570, port=1, send=0, transmission=successfully
+
+time=21580, port=1, send=0, transmission=successfully
+
+time=21590, port=1, send=0, transmission=successfully
+
+time=21600, port=1, send=0, transmission=successfully
+
+time=21610, port=1, send=0, transmission=successfully
+
+time=21620, port=1, send=0, transmission=successfully
+
+time=21630, port=1, send=0, transmission=successfully
+
+time=21640, port=1, send=0, transmission=successfully
+
+time=21650, port=1, send=0, transmission=successfully
+
+time=21660, port=1, send=0, transmission=successfully
+
+time=21670, port=1, send=1, transmission=successfully
+
+time=21680, port=1, send=0, transmission=successfully
+
+time=21690, port=1, send=0, transmission=successfully
+
+time=21700, port=1, send=0, transmission=successfully
+
+time=21710, port=1, send=0, transmission=successfully
+
+time=21720, port=1, send=1, transmission=successfully
+
+time=21730, port=1, send=0, transmission=successfully
+
+time=21740, port=1, send=0, transmission=successfully
+
+time=21750, port=1, send=0, transmission=successfully
+
+time=21760, port=1, send=1, transmission=successfully
+
+time=21770, port=1, send=0, transmission=successfully
+
+time=21780, port=1, send=0, transmission=successfully
+
+time=21790, port=1, send=0, transmission=successfully
+
+time=21800, port=1, send=1, transmission=successfully
+
+time=21810, port=1, send=0, transmission=successfully
+
+time=21820, port=1, send=0, transmission=successfully
+
+time=21830, port=1, send=0, transmission=successfully
+
+time=21840, port=1, send=1, transmission=successfully
+
+time=21850, port=1, send=0, transmission=successfully
+
+time=21860, port=1, send=0, transmission=successfully
+
+time=21870, port=1, send=0, transmission=successfully
+
+time=21880, port=1, send=1, transmission=successfully
+
+time=21890, port=1, send=1, transmission=successfully
+
+time=21900, port=1, send=0, transmission=successfully
+
+time=21910, port=1, send=0, transmission=successfully
+
+time=21920, port=1, send=1, transmission=successfully
+
+time=21930, port=1, send=1, transmission=successfully
+
+time=21940, port=1, send=0, transmission=successfully
+
+time=21950, port=1, send=0, transmission=successfully
+
+time=21960, port=1, send=1, transmission=successfully
+
+time=21970, port=1, send=1, transmission=successfully
+
+time=21980, port=1, send=0, transmission=successfully
+
+time=21990, port=1, send=0, transmission=successfully
+
+time=22000, port=1, send=1, transmission=successfully
+
+time=22010, port=1, send=1, transmission=successfully
+
+time=22020, port=1, send=1, transmission=successfully
+
+time=22030, port=1, send=1, transmission=successfully
+
+time=22040, port=1, send=0, transmission=successfully
+
+time=22050, port=1, send=0, transmission=successfully
+
+time=22060, port=1, send=0, transmission=successfully
+
+time=22070, port=1, send=1, transmission=successfully
+
+time=22080, port=1, send=0, transmission=successfully
+
+time=22090, port=1, send=1, transmission=successfully
+
+time=22100, port=1, send=0, transmission=successfully
+
+time=22110, port=1, send=1, transmission=successfully
+
+time=22120, port=1, send=1, transmission=successfully
+
+time=22130, port=1, send=1, transmission=successfully
+
+time=22140, port=1, send=0, transmission=successfully
+
+time=22150, port=1, send=0, transmission=successfully
+
+time=22160, port=1, send=0, transmission=successfully
+
+time=22170, port=1, send=0, transmission=successfully
+
+time=22180, port=1, send=null, cause=data_ended, transmission=successfully
+
+time=23000, port=1, send=1, transmission=successfully
+
+time=23010, port=1, send=1, transmission=successfully
+
+time=23020, port=1, send=0, transmission=successfully
+
+time=23030, port=1, send=0, transmission=successfully
+
+time=23040, port=1, send=0, transmission=successfully
+
+time=23050, port=1, send=1, transmission=successfully
+
+time=23060, port=1, send=0, transmission=successfully
+
+time=23070, port=1, send=1, transmission=successfully
+
+time=23080, port=1, send=1, transmission=successfully
+
+time=23090, port=1, send=1, transmission=successfully
+
+time=23100, port=1, send=0, transmission=successfully
+
+time=23110, port=1, send=1, transmission=successfully
+
+time=23120, port=1, send=0, transmission=successfully
+
+time=23130, port=1, send=1, transmission=successfully
+
+time=23140, port=1, send=1, transmission=successfully
+
+time=23150, port=1, send=0, transmission=successfully
+
+time=23160, port=1, receive=1
+
+time=23160, port=1, send=1, transmission=successfully
+
+time=23170, port=1, receive=1
+
+time=23170, port=1, send=1, transmission=successfully
+
+time=23180, port=1, receive=0
+
+time=23180, port=1, send=0, transmission=successfully
+
+time=23190, port=1, receive=0
+
+time=23190, port=1, send=0, transmission=successfully
+
+time=23200, port=1, receive=0
+
+time=23200, port=1, send=0, transmission=successfully
+
+time=23210, port=1, receive=1
+
+time=23210, port=1, send=1, transmission=successfully
+
+time=23220, port=1, receive=0
+
+time=23220, port=1, send=0, transmission=successfully
+
+time=23230, port=1, receive=1
+
+time=23230, port=1, send=1, transmission=successfully
+
+time=23240, port=1, receive=1
+
+time=23240, port=1, send=1, transmission=successfully
+
+time=23250, port=1, receive=1
+
+time=23250, port=1, send=1, transmission=successfully
+
+time=23260, port=1, receive=0
+
+time=23260, port=1, send=0, transmission=successfully
+
+time=23270, port=1, receive=1
+
+time=23270, port=1, send=1, transmission=successfully
+
+time=23280, port=1, receive=0
+
+time=23280, port=1, send=0, transmission=successfully
+
+time=23290, port=1, receive=1
+
+time=23290, port=1, send=1, transmission=successfully
+
+time=23300, port=1, receive=1
+
+time=23300, port=1, send=1, transmission=successfully
+
+time=23310, port=1, receive=0
+
+time=23310, port=1, send=0, transmission=successfully
+
+time=23320, port=1, receive=1
+
+time=23320, port=1, send=0, transmission=successfully
+
+time=23330, port=1, receive=1
+
+time=23330, port=1, send=0, transmission=successfully
+
+time=23340, port=1, receive=0
+
+time=23340, port=1, send=0, transmission=successfully
+
+time=23350, port=1, receive=0
+
+time=23350, port=1, send=0, transmission=successfully
+
+time=23360, port=1, receive=0
+
+time=23360, port=1, send=1, transmission=successfully
+
+time=23370, port=1, receive=1
+
+time=23370, port=1, send=1, transmission=successfully
+
+time=23380, port=1, receive=0
+
+time=23380, port=1, send=0, transmission=successfully
+
+time=23390, port=1, receive=1
+
+time=23390, port=1, send=1, transmission=successfully
+
+time=23400, port=1, receive=1
+
+time=23400, port=1, send=0, transmission=successfully
+
+time=23410, port=1, receive=1
+
+time=23410, port=1, send=0, transmission=successfully
+
+time=23420, port=1, receive=0
+
+time=23420, port=1, send=0, transmission=successfully
+
+time=23430, port=1, receive=1
+
+time=23430, port=1, send=0, transmission=successfully
+
+time=23440, port=1, receive=0
+
+time=23440, port=1, send=1, transmission=successfully
+
+time=23450, port=1, receive=1
+
+time=23450, port=1, send=1, transmission=successfully
+
+time=23460, port=1, receive=1
+
+time=23460, port=1, send=1, transmission=successfully
+
+time=23470, port=1, receive=0
+
+time=23470, port=1, send=1, transmission=successfully
+
+time=23480, port=1, receive=0
+
+time=23480, port=1, send=0, transmission=successfully
+
+time=23490, port=1, receive=0
+
+time=23490, port=1, send=0, transmission=successfully
+
+time=23500, port=1, receive=0
+
+time=23500, port=1, send=0, transmission=successfully
+
+time=23510, port=1, receive=0
+
+time=23510, port=1, send=0, transmission=successfully
+
+time=23520, port=1, receive=1
+
+time=23520, port=1, send=1, transmission=successfully
+
+time=23530, port=1, receive=1
+
+time=23530, port=1, send=0, transmission=successfully
+
+time=23540, port=1, receive=0
+
+time=23540, port=1, send=1, transmission=successfully
+
+time=23550, port=1, receive=1
+
+time=23550, port=1, send=0, transmission=successfully
+
+time=23560, port=1, receive=0
+
+time=23560, port=1, send=0, transmission=successfully
+
+time=23570, port=1, receive=0
+
+time=23570, port=1, send=0, transmission=successfully
+
+time=23580, port=1, receive=0
+
+time=23580, port=1, send=0, transmission=successfully
+
+time=23590, port=1, receive=0
+
+time=23590, port=1, send=0, transmission=successfully
+
+time=23600, port=1, receive=1
+
+time=23600, port=1, send=0, transmission=successfully
+
+time=23610, port=1, receive=1
+
+time=23610, port=1, send=1, transmission=successfully
+
+time=23620, port=1, receive=1
+
+time=23620, port=1, send=1, transmission=successfully
+
+time=23630, port=1, receive=1
+
+time=23630, port=1, send=0, transmission=successfully
+
+time=23640, port=1, receive=0
+
+time=23640, port=1, send=0, transmission=successfully
+
+time=23650, port=1, receive=0
+
+time=23650, port=1, send=1, transmission=successfully
+
+time=23660, port=1, receive=0
+
+time=23660, port=1, send=1, transmission=successfully
+
+time=23670, port=1, receive=0
+
+time=23670, port=1, send=1, transmission=successfully
+
+time=23680, port=1, receive=1
+
+time=23680, port=1, send=1, transmission=successfully
+
+time=23690, port=1, receive=0
+
+time=23690, port=1, send=0, transmission=successfully
+
+time=23700, port=1, receive=1
+
+time=23700, port=1, send=1, transmission=successfully
+
+time=23710, port=1, receive=0
+
+time=23710, port=1, send=0, transmission=successfully
+
+time=23720, port=1, receive=0
+
+time=23720, port=1, send=0, transmission=successfully
+
+time=23730, port=1, receive=0
+
+time=23730, port=1, send=0, transmission=successfully
+
+time=23740, port=1, receive=0
+
+time=23740, port=1, send=0, transmission=successfully
+
+time=23750, port=1, receive=0
+
+time=23750, port=1, send=1, transmission=successfully
+
+time=23760, port=1, receive=0
+
+time=23760, port=1, send=1, transmission=successfully
+
+time=23770, port=1, receive=1
+
+time=23770, port=1, send=1, transmission=successfully
+
+time=23780, port=1, receive=1
+
+time=23780, port=1, send=1, transmission=successfully
+
+time=23790, port=1, receive=0
+
+time=23790, port=1, send=1, transmission=successfully
+
+time=23800, port=1, receive=0
+
+time=23800, port=1, send=0, transmission=successfully
+
+time=23810, port=1, receive=1
+
+time=23810, port=1, send=0, transmission=successfully
+
+time=23820, port=1, receive=1
+
+time=23820, port=1, send=0, transmission=successfully
+
+time=23830, port=1, receive=1
+
+time=23830, port=1, send=0, transmission=successfully
+
+time=23840, port=1, receive=1
+
+time=23840, port=1, send=1, transmission=successfully
+
+time=23850, port=1, receive=0
+
+time=23850, port=1, send=0, transmission=successfully
+
+time=23860, port=1, receive=1
+
+time=23860, port=1, send=1, transmission=successfully
+
+time=23870, port=1, receive=0
+
+time=23870, port=1, send=0, transmission=successfully
+
+time=23880, port=1, receive=0
+
+time=23880, port=1, send=0, transmission=successfully
+
+time=23890, port=1, receive=0
+
+time=23890, port=1, send=0, transmission=successfully
+
+time=23900, port=1, receive=0
+
+time=23900, port=1, send=0, transmission=successfully
+
+time=23910, port=1, receive=1
+
+time=23910, port=1, send=0, transmission=successfully
+
+time=23920, port=1, receive=1
+
+time=23920, port=1, send=0, transmission=successfully
+
+time=23930, port=1, receive=1
+
+time=23930, port=1, send=1, transmission=successfully
+
+time=23940, port=1, receive=1
+
+time=23940, port=1, send=1, transmission=successfully
+
+time=23950, port=1, receive=1
+
+time=23950, port=1, send=0, transmission=successfully
+
+time=23960, port=1, receive=0
+
+time=23960, port=1, send=0, transmission=successfully
+
+time=23970, port=1, receive=0
+
+time=23970, port=1, send=1, transmission=successfully
+
+time=23980, port=1, receive=0
+
+time=23980, port=1, send=1, transmission=successfully
+
+time=23990, port=1, receive=0
+
+time=23990, port=1, send=1, transmission=successfully
+
+time=24000, port=1, receive=1
+
+time=24000, port=1, send=1, transmission=successfully
+
+time=24010, port=1, receive=0
+
+time=24010, port=1, send=0, transmission=successfully
+
+time=24020, port=1, receive=1
+
+time=24020, port=1, send=1, transmission=successfully
+
+time=24030, port=1, receive=0
+
+time=24030, port=1, send=0, transmission=successfully
+
+time=24040, port=1, receive=0
+
+time=24040, port=1, send=0, transmission=successfully
+
+time=24050, port=1, receive=0
+
+time=24050, port=1, send=0, transmission=successfully
+
+time=24060, port=1, receive=0
+
+time=24060, port=1, send=0, transmission=successfully
+
+time=24070, port=1, receive=0
+
+time=24070, port=1, send=1, transmission=successfully
+
+time=24080, port=1, receive=0
+
+time=24080, port=1, send=1, transmission=successfully
+
+time=24090, port=1, receive=1
+
+time=24090, port=1, send=1, transmission=successfully
+
+time=24100, port=1, receive=1
+
+time=24100, port=1, send=1, transmission=successfully
+
+time=24110, port=1, receive=0
+
+time=24110, port=1, send=1, transmission=successfully
+
+time=24120, port=1, receive=0
+
+time=24120, port=1, send=0, transmission=successfully
+
+time=24130, port=1, receive=1
+
+time=24130, port=1, send=0, transmission=successfully
+
+time=24140, port=1, receive=1
+
+time=24140, port=1, send=0, transmission=successfully
+
+time=24150, port=1, receive=1
+
+time=24150, port=1, send=0, transmission=successfully
+
+time=24160, port=1, receive=1
+
+time=24160, port=1, send=0, transmission=successfully
+
+time=24170, port=1, receive=0
+
+time=24170, port=1, send=0, transmission=successfully
+
+time=24180, port=1, receive=1
+
+time=24180, port=1, send=0, transmission=successfully
+
+time=24190, port=1, receive=0
+
+time=24190, port=1, send=0, transmission=successfully
+
+time=24200, port=1, receive=0
+
+time=24200, port=1, send=0, transmission=successfully
+
+time=24210, port=1, receive=0
+
+time=24210, port=1, send=0, transmission=successfully
+
+time=24220, port=1, receive=0
+
+time=24220, port=1, send=0, transmission=successfully
+
+time=24230, port=1, receive=1
+
+time=24230, port=1, send=0, transmission=successfully
+
+time=24240, port=1, receive=1
+
+time=24240, port=1, send=0, transmission=successfully
+
+time=24250, port=1, receive=1
+
+time=24250, port=1, send=0, transmission=successfully
+
+time=24260, port=1, receive=1
+
+time=24260, port=1, send=0, transmission=successfully
+
+time=24270, port=1, receive=1
+
+time=24270, port=1, send=0, transmission=successfully
+
+time=24280, port=1, receive=0
+
+time=24280, port=1, send=0, transmission=successfully
+
+time=24290, port=1, receive=0
+
+time=24290, port=1, send=0, transmission=successfully
+
+time=24300, port=1, receive=0
+
+time=24300, port=1, send=0, transmission=successfully
+
+time=24310, port=1, receive=0
+
+time=24310, port=1, send=0, transmission=successfully
+
+time=24320, port=1, receive=0
+
+time=24320, port=1, send=0, transmission=successfully
+
+time=24330, port=1, receive=0
+
+time=24330, port=1, send=0, transmission=successfully
+
+time=24340, port=1, receive=0
+
+time=24340, port=1, send=1, transmission=successfully
+
+time=24350, port=1, receive=0
+
+time=24350, port=1, send=0, transmission=successfully
+
+time=24360, port=1, receive=0
+
+time=24360, port=1, send=0, transmission=successfully
+
+time=24370, port=1, receive=0
+
+time=24370, port=1, send=1, transmission=successfully
+
+time=24380, port=1, receive=0
+
+time=24380, port=1, send=0, transmission=successfully
+
+time=24390, port=1, receive=0
+
+time=24390, port=1, send=0, transmission=successfully
+
+time=24400, port=1, receive=0
+
+time=24400, port=1, send=0, transmission=successfully
+
+time=24410, port=1, receive=0
+
+time=24410, port=1, send=1, transmission=successfully
+
+time=24420, port=1, receive=0
+
+time=24420, port=1, send=0, transmission=successfully
+
+time=24430, port=1, receive=0
+
+time=24430, port=1, send=0, transmission=successfully
+
+time=24440, port=1, receive=0
+
+time=24440, port=1, send=0, transmission=successfully
+
+time=24450, port=1, receive=0
+
+time=24450, port=1, send=1, transmission=successfully
+
+time=24460, port=1, receive=0
+
+time=24460, port=1, send=0, transmission=successfully
+
+time=24470, port=1, receive=0
+
+time=24470, port=1, send=0, transmission=successfully
+
+time=24480, port=1, receive=0
+
+time=24480, port=1, send=0, transmission=successfully
+
+time=24490, port=1, receive=0
+
+time=24490, port=1, send=1, transmission=successfully
+
+time=24500, port=1, receive=1
+
+time=24500, port=1, send=0, transmission=successfully
+
+time=24510, port=1, receive=0
+
+time=24510, port=1, send=0, transmission=successfully
+
+time=24520, port=1, receive=0
+
+time=24520, port=1, send=0, transmission=successfully
+
+time=24530, port=1, receive=1
+
+time=24530, port=1, send=0, transmission=successfully
+
+time=24540, port=1, receive=0
+
+time=24540, port=1, send=0, transmission=successfully
+
+time=24550, port=1, receive=0
+
+time=24550, port=1, send=0, transmission=successfully
+
+time=24560, port=1, receive=0
+
+time=24560, port=1, send=1, transmission=successfully
+
+time=24570, port=1, receive=1
+
+time=24570, port=1, send=0, transmission=successfully
+
+time=24580, port=1, receive=0
+
+time=24580, port=1, send=1, transmission=successfully
+
+time=24590, port=1, receive=0
+
+time=24590, port=1, send=0, transmission=successfully
+
+time=24600, port=1, receive=0
+
+time=24600, port=1, send=0, transmission=successfully
+
+time=24610, port=1, receive=1
+
+time=24610, port=1, send=0, transmission=successfully
+
+time=24620, port=1, receive=0
+
+time=24620, port=1, send=0, transmission=successfully
+
+time=24630, port=1, receive=0
+
+time=24630, port=1, send=0, transmission=successfully
+
+time=24640, port=1, receive=0
+
+time=24640, port=1, send=0, transmission=successfully
+
+time=24650, port=1, receive=1
+
+time=24650, port=1, send=1, transmission=successfully
+
+time=24660, port=1, receive=0
+
+time=24660, port=1, send=1, transmission=successfully
+
+time=24670, port=1, receive=0
+
+time=24670, port=1, send=0, transmission=successfully
+
+time=24680, port=1, receive=0
+
+time=24680, port=1, send=0, transmission=successfully
+
+time=24690, port=1, receive=0
+
+time=24690, port=1, send=1, transmission=successfully
+
+time=24700, port=1, receive=0
+
+time=24700, port=1, send=1, transmission=successfully
+
+time=24710, port=1, receive=0
+
+time=24710, port=1, send=1, transmission=successfully
+
+time=24720, port=1, receive=1
+
+time=24720, port=1, send=1, transmission=successfully
+
+time=24730, port=1, receive=0
+
+time=24730, port=1, send=0, transmission=successfully
+
+time=24740, port=1, receive=1
+
+time=24740, port=1, send=1, transmission=successfully
+
+time=24750, port=1, receive=0
+
+time=24750, port=1, send=0, transmission=successfully
+
+time=24760, port=1, receive=0
+
+time=24760, port=1, send=0, transmission=successfully
+
+time=24770, port=1, receive=0
+
+time=24770, port=1, send=0, transmission=successfully
+
+time=24780, port=1, receive=0
+
+time=24780, port=1, send=0, transmission=successfully
+
+time=24790, port=1, receive=0
+
+time=24790, port=1, send=1, transmission=successfully
+
+time=24800, port=1, receive=0
+
+time=24800, port=1, send=1, transmission=successfully
+
+time=24810, port=1, receive=1
+
+time=24810, port=1, send=1, transmission=successfully
+
+time=24820, port=1, receive=1
+
+time=24820, port=1, send=1, transmission=successfully
+
+time=24830, port=1, receive=0
+
+time=24830, port=1, send=1, transmission=successfully
+
+time=24840, port=1, receive=0
+
+time=24840, port=1, send=0, transmission=successfully
+
+time=24850, port=1, receive=1
+
+time=24850, port=1, send=0, transmission=successfully
+
+time=24860, port=1, receive=1
+
+time=24860, port=1, send=0, transmission=successfully
+
+time=24870, port=1, receive=1
+
+time=24870, port=1, send=0, transmission=successfully
+
+time=24880, port=1, receive=1
+
+time=24880, port=1, send=1, transmission=successfully
+
+time=24890, port=1, receive=0
+
+time=24890, port=1, send=0, transmission=successfully
+
+time=24900, port=1, receive=1
+
+time=24900, port=1, send=1, transmission=successfully
+
+time=24910, port=1, receive=0
+
+time=24910, port=1, send=0, transmission=successfully
+
+time=24920, port=1, receive=0
+
+time=24920, port=1, send=0, transmission=successfully
+
+time=24930, port=1, receive=0
+
+time=24930, port=1, send=0, transmission=successfully
+
+time=24940, port=1, receive=0
+
+time=24940, port=1, send=0, transmission=successfully
+
+time=24950, port=1, receive=1
+
+time=24950, port=1, send=0, transmission=successfully
+
+time=24960, port=1, receive=1
+
+time=24960, port=1, send=0, transmission=successfully
+
+time=24970, port=1, receive=1
+
+time=24970, port=1, send=1, transmission=successfully
+
+time=24980, port=1, receive=1
+
+time=24980, port=1, send=1, transmission=successfully
+
+time=24990, port=1, receive=1
+
+time=24990, port=1, send=0, transmission=successfully
+
+time=25000, port=1, receive=0
+
+time=25000, port=1, send=0, transmission=successfully
+
+time=25010, port=1, receive=0
+
+time=25010, port=1, send=1, transmission=successfully
+
+time=25020, port=1, receive=0
+
+time=25020, port=1, send=1, transmission=successfully
+
+time=25030, port=1, receive=0
+
+time=25030, port=1, send=1, transmission=successfully
+
+time=25040, port=1, receive=1
+
+time=25040, port=1, send=1, transmission=successfully
+
+time=25050, port=1, receive=0
+
+time=25050, port=1, send=0, transmission=successfully
+
+time=25060, port=1, receive=1
+
+time=25060, port=1, send=1, transmission=successfully
+
+time=25070, port=1, receive=0
+
+time=25070, port=1, send=0, transmission=successfully
+
+time=25080, port=1, receive=0
+
+time=25080, port=1, send=0, transmission=successfully
+
+time=25090, port=1, receive=0
+
+time=25090, port=1, send=0, transmission=successfully
+
+time=25100, port=1, receive=0
+
+time=25100, port=1, send=0, transmission=successfully
+
+time=25110, port=1, receive=0
+
+time=25110, port=1, send=1, transmission=successfully
+
+time=25120, port=1, receive=0
+
+time=25120, port=1, send=1, transmission=successfully
+
+time=25130, port=1, receive=1
+
+time=25130, port=1, send=1, transmission=successfully
+
+time=25140, port=1, receive=1
+
+time=25140, port=1, send=1, transmission=successfully
+
+time=25150, port=1, receive=0
+
+time=25150, port=1, send=1, transmission=successfully
+
+time=25160, port=1, receive=0
+
+time=25160, port=1, send=0, transmission=successfully
+
+time=25170, port=1, receive=1
+
+time=25170, port=1, send=0, transmission=successfully
+
+time=25180, port=1, receive=1
+
+time=25180, port=1, send=0, transmission=successfully
+
+time=25190, port=1, receive=1
+
+time=25190, port=1, send=0, transmission=successfully
+
+time=25200, port=1, receive=1
+
+time=25200, port=1, send=0, transmission=successfully
+
+time=25210, port=1, receive=0
+
+time=25210, port=1, send=0, transmission=successfully
+
+time=25220, port=1, receive=1
+
+time=25220, port=1, send=0, transmission=successfully
+
+time=25230, port=1, receive=0
+
+time=25230, port=1, send=0, transmission=successfully
+
+time=25240, port=1, receive=0
+
+time=25240, port=1, send=0, transmission=successfully
+
+time=25250, port=1, receive=0
+
+time=25250, port=1, send=0, transmission=successfully
+
+time=25260, port=1, receive=0
+
+time=25260, port=1, send=0, transmission=successfully
+
+time=25270, port=1, receive=1
+
+time=25270, port=1, send=0, transmission=successfully
+
+time=25280, port=1, receive=1
+
+time=25280, port=1, send=0, transmission=successfully
+
+time=25290, port=1, receive=1
+
+time=25290, port=1, send=0, transmission=successfully
+
+time=25300, port=1, receive=1
+
+time=25300, port=1, send=0, transmission=successfully
+
+time=25310, port=1, receive=1
+
+time=25310, port=1, send=0, transmission=successfully
+
+time=25320, port=1, receive=0
+
+time=25320, port=1, send=0, transmission=successfully
+
+time=25330, port=1, receive=0
+
+time=25330, port=1, send=0, transmission=successfully
+
+time=25340, port=1, receive=0
+
+time=25340, port=1, send=0, transmission=successfully
+
+time=25350, port=1, receive=0
+
+time=25350, port=1, send=0, transmission=successfully
+
+time=25360, port=1, receive=0
+
+time=25360, port=1, send=0, transmission=successfully
+
+time=25370, port=1, receive=0
+
+time=25370, port=1, send=0, transmission=successfully
+
+time=25380, port=1, receive=0
+
+time=25380, port=1, send=1, transmission=successfully
+
+time=25390, port=1, receive=0
+
+time=25390, port=1, send=0, transmission=successfully
+
+time=25400, port=1, receive=0
+
+time=25400, port=1, send=0, transmission=successfully
+
+time=25410, port=1, receive=0
+
+time=25410, port=1, send=1, transmission=successfully
+
+time=25420, port=1, receive=0
+
+time=25420, port=1, send=0, transmission=successfully
+
+time=25430, port=1, receive=0
+
+time=25430, port=1, send=0, transmission=successfully
+
+time=25440, port=1, receive=0
+
+time=25440, port=1, send=0, transmission=successfully
+
+time=25450, port=1, receive=0
+
+time=25450, port=1, send=1, transmission=successfully
+
+time=25460, port=1, receive=0
+
+time=25460, port=1, send=0, transmission=successfully
+
+time=25470, port=1, receive=0
+
+time=25470, port=1, send=0, transmission=successfully
+
+time=25480, port=1, receive=0
+
+time=25480, port=1, send=0, transmission=successfully
+
+time=25490, port=1, receive=0
+
+time=25490, port=1, send=1, transmission=successfully
+
+time=25500, port=1, receive=0
+
+time=25500, port=1, send=0, transmission=successfully
+
+time=25510, port=1, receive=0
+
+time=25510, port=1, send=0, transmission=successfully
+
+time=25520, port=1, receive=0
+
+time=25520, port=1, send=0, transmission=successfully
+
+time=25530, port=1, receive=0
+
+time=25530, port=1, send=1, transmission=successfully
+
+time=25540, port=1, receive=1
+
+time=25540, port=1, send=0, transmission=successfully
+
+time=25550, port=1, receive=0
+
+time=25550, port=1, send=0, transmission=successfully
+
+time=25560, port=1, receive=0
+
+time=25560, port=1, send=1, transmission=successfully
+
+time=25570, port=1, receive=1
+
+time=25570, port=1, send=0, transmission=successfully
+
+time=25580, port=1, receive=0
+
+time=25580, port=1, send=0, transmission=successfully
+
+time=25590, port=1, receive=0
+
+time=25590, port=1, send=1, transmission=successfully
+
+time=25600, port=1, receive=0
+
+time=25600, port=1, send=0, transmission=successfully
+
+time=25610, port=1, receive=1
+
+time=25610, port=1, send=0, transmission=successfully
+
+time=25620, port=1, receive=0
+
+time=25620, port=1, send=0, transmission=successfully
+
+time=25630, port=1, receive=0
+
+time=25630, port=1, send=1, transmission=successfully
+
+time=25640, port=1, receive=0
+
+time=25640, port=1, send=1, transmission=successfully
+
+time=25650, port=1, receive=1
+
+time=25650, port=1, send=1, transmission=successfully
+
+time=25660, port=1, receive=0
+
+time=25660, port=1, send=1, transmission=successfully
+
+time=25670, port=1, receive=0
+
+time=25670, port=1, send=1, transmission=successfully
+
+time=25680, port=1, receive=0
+
+time=25680, port=1, send=1, transmission=successfully
+
+time=25690, port=1, receive=1
+
+time=25690, port=1, send=0, transmission=successfully
+
+time=25700, port=1, receive=0
+
+time=25700, port=1, send=0, transmission=successfully
+
+time=25710, port=1, receive=0
+
+time=25710, port=1, send=1, transmission=successfully
+
+time=25720, port=1, receive=1
+
+time=25720, port=1, send=null, cause=data_ended, transmission=successfully
+
+time=25730, port=1, receive=0
+
+time=25740, port=1, receive=0
+
+time=25750, port=1, receive=1
+
+time=25760, port=1, receive=0
+
+time=25770, port=1, receive=0
+
+time=25780, port=1, receive=0
+
+time=25790, port=1, receive=1
+
+time=25800, port=1, receive=1
+
+time=25810, port=1, receive=1
+
+time=25820, port=1, receive=1
+
+time=25830, port=1, receive=1
+
+time=25840, port=1, receive=1
+
+time=25850, port=1, receive=0
+
+time=25860, port=1, receive=0
+
+time=25870, port=1, receive=1
+
+time=25880, port=1, receive=null, cause=data_ended
+
+time=25880, port=1, receive=1
+
+time=25890, port=1, receive=0
+
+time=25900, port=1, receive=1
+
+time=25910, port=1, receive=0
+
+time=25920, port=1, receive=0
+
+time=25930, port=1, receive=0
+
+time=25940, port=1, receive=0
+
+time=25950, port=1, receive=0
+
+time=25960, port=1, receive=0
+
+time=25970, port=1, receive=1
+
+time=25980, port=1, receive=1
+
+time=25990, port=1, receive=0
+
+time=26000, port=1, receive=0
+
+time=26010, port=1, receive=1
+
+time=26020, port=1, receive=1
+
+time=26030, port=1, receive=1
+
+time=26040, port=1, receive=1
+
+time=26050, port=1, receive=0
+
+time=26060, port=1, receive=1
+
+time=26070, port=1, receive=0
+
+time=26080, port=1, receive=0
+
+time=26090, port=1, receive=0
+
+time=26100, port=1, receive=1
+
+time=26110, port=1, receive=1
+
+time=26120, port=1, receive=0
+
+time=26130, port=1, receive=0
+
+time=26140, port=1, receive=1
+
+time=26150, port=1, receive=0
+
+time=26160, port=1, receive=0
+
+time=26170, port=1, receive=null, cause=data_ended
+
+time=26360, port=1, receive=1
+
+time=26370, port=1, receive=1
+
+time=26380, port=1, receive=1
+
+time=26390, port=1, receive=1
+
+time=26400, port=1, receive=0
+
+time=26410, port=1, receive=0
+
+time=26420, port=1, receive=1
+
+time=26430, port=1, receive=0
+
+time=26440, port=1, receive=1
+
+time=26450, port=1, receive=1
+
+time=26460, port=1, receive=0
+
+time=26470, port=1, receive=1
+
+time=26480, port=1, receive=0
+
+time=26490, port=1, receive=0
+
+time=26500, port=1, receive=1
+
+time=26510, port=1, receive=0
+
+time=26520, port=1, receive=1
+
+time=26530, port=1, receive=0
+
+time=26540, port=1, receive=1
+
+time=26550, port=1, receive=0
+
+time=26560, port=1, receive=0
+
+time=26570, port=1, receive=1
+
+time=26580, port=1, receive=0
+
+time=26590, port=1, receive=0
+
+time=26600, port=1, receive=1
+
+time=26610, port=1, receive=0
+
+time=26620, port=1, receive=1
+
+time=26630, port=1, receive=1
+
+time=26640, port=1, receive=0
+
+time=26650, port=1, receive=1
+
+time=26660, port=1, receive=0
+
+time=26670, port=1, receive=1
+
+time=26680, port=1, receive=0
+
+time=26690, port=1, receive=0
+
+time=26700, port=1, receive=0
+
+time=26710, port=1, receive=0
+
+time=26720, port=1, receive=1
+
+time=26730, port=1, receive=1
+
+time=26740, port=1, receive=1
+
+time=26750, port=1, receive=1
+
+time=26760, port=1, receive=0
+
+time=26770, port=1, receive=0
+
+time=26780, port=1, receive=0
+
+time=26790, port=1, receive=1
+
+time=26800, port=1, receive=0
+
+time=26810, port=1, receive=0
+
+time=26820, port=1, receive=0
+
+time=26830, port=1, receive=1
+
+time=26840, port=1, receive=0
+
+time=26850, port=1, receive=0
+
+time=26860, port=1, receive=0
+
+time=26870, port=1, receive=0
+
+time=26880, port=1, receive=1
+
+time=26890, port=1, receive=0
+
+time=26900, port=1, receive=1
+
+time=26910, port=1, receive=0
+
+time=26920, port=1, receive=0
+
+time=26930, port=1, receive=0
+
+time=26940, port=1, receive=0
+
+time=26950, port=1, receive=0
+
+time=26960, port=1, receive=0
+
+time=26970, port=1, receive=1
+
+time=26980, port=1, receive=1
+
+time=26990, port=1, receive=0
+
+time=27000, port=1, receive=0
+
+time=27010, port=1, receive=1
+
+time=27020, port=1, receive=1
+
+time=27030, port=1, receive=1
+
+time=27040, port=1, receive=1
+
+time=27050, port=1, receive=0
+
+time=27060, port=1, receive=1
+
+time=27070, port=1, receive=0
+
+time=27080, port=1, receive=0
+
+time=27090, port=1, receive=0
+
+time=27100, port=1, receive=1
+
+time=27110, port=1, receive=1
+
+time=27120, port=1, receive=0
+
+time=27130, port=1, receive=0
+
+time=27140, port=1, receive=1
+
+time=27150, port=1, receive=0
+
+time=27160, port=1, receive=0
+
+time=27170, port=1, receive=0
+
+time=27180, port=1, receive=0
+
+time=27190, port=1, receive=0
+
+time=27200, port=1, receive=1
+
+time=27210, port=1, receive=0
+
+time=27220, port=1, receive=1
+
+time=27230, port=1, receive=0
+
+time=27240, port=1, receive=0
+
+time=27250, port=1, receive=0
+
+time=27260, port=1, receive=0
+
+time=27270, port=1, receive=0
+
+time=27280, port=1, receive=0
+
+time=27290, port=1, receive=1
+
+time=27300, port=1, receive=1
+
+time=27310, port=1, receive=0
+
+time=27320, port=1, receive=0
+
+time=27330, port=1, receive=1
+
+time=27340, port=1, receive=1
+
+time=27350, port=1, receive=1
+
+time=27360, port=1, receive=1
+
+time=27370, port=1, receive=0
+
+time=27380, port=1, receive=1
+
+time=27390, port=1, receive=0
+
+time=27400, port=1, receive=0
+
+time=27410, port=1, receive=0
+
+time=27420, port=1, receive=1
+
+time=27430, port=1, receive=0
+
+time=27440, port=1, receive=1
+
+time=27450, port=1, receive=1
+
+time=27460, port=1, receive=0
+
+time=27470, port=1, receive=0
+
+time=27480, port=1, receive=0
+
+time=27490, port=1, receive=0
+
+time=27500, port=1, receive=0
+
+time=27510, port=1, receive=0
+
+time=27520, port=1, receive=0
+
+time=27530, port=1, receive=0
+
+time=27540, port=1, receive=0
+
+time=27550, port=1, receive=0
+
+time=27560, port=1, receive=0
+
+time=27570, port=1, receive=0
+
+time=27580, port=1, receive=0
+
+time=27590, port=1, receive=0
+
+time=27600, port=1, receive=0
+
+time=27610, port=1, receive=0
+
+time=27620, port=1, receive=0
+
+time=27630, port=1, receive=0
+
+time=27640, port=1, receive=0
+
+time=27650, port=1, receive=0
+
+time=27660, port=1, receive=0
+
+time=27670, port=1, receive=0
+
+time=27680, port=1, receive=0
+
+time=27690, port=1, receive=1
+
+time=27700, port=1, receive=0
+
+time=27710, port=1, receive=0
+
+time=27720, port=1, receive=0
+
+time=27730, port=1, receive=1
+
+time=27740, port=1, receive=0
+
+time=27750, port=1, receive=1
+
+time=27760, port=1, receive=0
+
+time=27770, port=1, receive=1
+
+time=27780, port=1, receive=0
+
+time=27790, port=1, receive=1
+
+time=27800, port=1, receive=0
+
+time=27810, port=1, receive=1
+
+time=27820, port=1, receive=0
+
+time=27830, port=1, receive=1
+
+time=27840, port=1, receive=0
+
+time=27850, port=1, receive=1
+
+time=27860, port=1, receive=0
+
+time=27870, port=1, receive=1
+
+time=27880, port=1, receive=0
+
+time=27890, port=1, receive=1
+
+time=27900, port=1, receive=1
+
+time=27910, port=1, receive=0
+
+time=27920, port=1, receive=0
+
+time=27930, port=1, receive=1
+
+time=27940, port=1, receive=1
+
+time=27950, port=1, receive=0
+
+time=27960, port=1, receive=0
+
+time=27970, port=1, receive=1
+
+time=27980, port=1, receive=1
+
+time=27990, port=1, receive=0
+
+time=28000, port=1, receive=0
+
+time=28010, port=1, receive=1
+
+time=28020, port=1, receive=1
+
+time=28030, port=1, receive=0
+
+time=28040, port=1, receive=0
+
+time=28050, port=1, receive=0
+
+time=28060, port=1, receive=0
+
+time=28070, port=1, receive=0
+
+time=28080, port=1, receive=1
+
+time=28090, port=1, receive=0
+
+time=28100, port=1, receive=1
+
+time=28110, port=1, receive=0
+
+time=28120, port=1, receive=0
+
+time=28130, port=1, receive=0
+
+time=28140, port=1, receive=0
+
+time=28150, port=1, receive=0
+
+time=28160, port=1, receive=0
+
+time=28170, port=1, receive=1
+
+time=28180, port=1, receive=1
+
+time=28190, port=1, receive=0
+
+time=28200, port=1, receive=0
+
+time=28210, port=1, receive=1
+
+time=28220, port=1, receive=1
+
+time=28230, port=1, receive=1
+
+time=28240, port=1, receive=1
+
+time=28250, port=1, receive=0
+
+time=28260, port=1, receive=1
+
+time=28270, port=1, receive=0
+
+time=28280, port=1, receive=0
+
+time=28290, port=1, receive=0
+
+time=28300, port=1, receive=1
+
+time=28310, port=1, receive=1
+
+time=28320, port=1, receive=0
+
+time=28330, port=1, receive=0
+
+time=28340, port=1, receive=1
+
+time=28350, port=1, receive=0
+
+time=28360, port=1, receive=0
+
+time=28370, port=1, receive=0
+
+time=28380, port=1, receive=0
+
+time=28390, port=1, receive=0
+
+time=28400, port=1, receive=1
+
+time=28410, port=1, receive=0
+
+time=28420, port=1, receive=1
+
+time=28430, port=1, receive=0
+
+time=28440, port=1, receive=0
+
+time=28450, port=1, receive=0
+
+time=28460, port=1, receive=0
+
+time=28470, port=1, receive=0
+
+time=28480, port=1, receive=0
+
+time=28490, port=1, receive=1
+
+time=28500, port=1, receive=1
+
+time=28510, port=1, receive=0
+
+time=28520, port=1, receive=0
+
+time=28530, port=1, receive=1
+
+time=28540, port=1, receive=1
+
+time=28550, port=1, receive=1
+
+time=28560, port=1, receive=1
+
+time=28570, port=1, receive=0
+
+time=28580, port=1, receive=1
+
+time=28590, port=1, receive=0
+
+time=28600, port=1, receive=0
+
+time=28610, port=1, receive=0
+
+time=28620, port=1, receive=1
+
+time=28630, port=1, receive=0
+
+time=28640, port=1, receive=1
+
+time=28650, port=1, receive=1
+
+time=28660, port=1, receive=0
+
+time=28670, port=1, receive=0
+
+time=28680, port=1, receive=0
+
+time=28690, port=1, receive=0
+
+time=28700, port=1, receive=0
+
+time=28710, port=1, receive=0
+
+time=28720, port=1, receive=0
+
+time=28730, port=1, receive=0
+
+time=28740, port=1, receive=0
+
+time=28750, port=1, receive=0
+
+time=28760, port=1, receive=0
+
+time=28770, port=1, receive=0
+
+time=28780, port=1, receive=0
+
+time=28790, port=1, receive=0
+
+time=28800, port=1, receive=0
+
+time=28810, port=1, receive=0
+
+time=28820, port=1, receive=0
+
+time=28830, port=1, receive=0
+
+time=28840, port=1, receive=0
+
+time=28850, port=1, receive=0
+
+time=28860, port=1, receive=0
+
+time=28870, port=1, receive=0
+
+time=28880, port=1, receive=0
+
+time=28890, port=1, receive=1
+
+time=28900, port=1, receive=0
+
+time=28910, port=1, receive=0
+
+time=28920, port=1, receive=0
+
+time=28930, port=1, receive=1
+
+time=28940, port=1, receive=0
+
+time=28950, port=1, receive=1
+
+time=28960, port=1, receive=0
+
+time=28970, port=1, receive=1
+
+time=28980, port=1, receive=0
+
+time=28990, port=1, receive=1
+
+time=29000, port=1, receive=0
+
+time=29010, port=1, receive=1
+
+time=29020, port=1, receive=0
+
+time=29030, port=1, receive=1
+
+time=29040, port=1, receive=0
+
+time=29050, port=1, receive=1
+
+time=29060, port=1, receive=0
+
+time=29070, port=1, receive=1
+
+time=29080, port=1, receive=0
+
+time=29090, port=1, receive=1
+
+time=29100, port=1, receive=1
+
+time=29110, port=1, receive=0
+
+time=29120, port=1, receive=0
+
+time=29130, port=1, receive=1
+
+time=29140, port=1, receive=1
+
+time=29150, port=1, receive=0
+
+time=29160, port=1, receive=0
+
+time=29170, port=1, receive=1
+
+time=29180, port=1, receive=1
+
+time=29190, port=1, receive=0
+
+time=29200, port=1, receive=0
+
+time=29210, port=1, receive=1
+
+time=29220, port=1, receive=1
+
+time=29230, port=1, receive=0
+
+time=29240, port=1, receive=1
+
+time=29250, port=1, receive=1
+
+time=29260, port=1, receive=0
+
+time=29270, port=1, receive=1
+
+time=29280, port=1, receive=1
+
+time=29290, port=1, receive=0
+
+time=29300, port=1, receive=0
+
+time=29310, port=1, receive=1
+
+time=29320, port=1, receive=1
+
+time=29330, port=1, receive=1
+
+time=29340, port=1, receive=0
+
+time=29350, port=1, receive=0
+
+time=29360, port=1, receive=0
+
+time=29370, port=1, receive=1
+
+time=29380, port=1, receive=0
+
+time=29390, port=1, receive=1
+
+time=29400, port=1, receive=null, cause=data_ended
+
