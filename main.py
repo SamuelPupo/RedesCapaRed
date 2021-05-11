@@ -18,17 +18,17 @@ def main():
         print("\nCONFIG WAS NOT FOUND.\n")
     else:
         try:
-            while True:
-                line = config.readline().replace(' ', '').replace('\n', '')
+            values = lines(config)
+            for line in values:
                 if len(line) < 1:
-                    break
+                    continue
                 line = line.split('=')
                 if line[0] == "signal_time":
                     signal_time = int(line[1])
                 elif line[0] == "error_detection":
                     error_detection = line[1].lower()
                 else:
-                    print("WRONG CONFIG INSTRUCTION.")
+                    print("\nWRONG CONFIG INSTRUCTION.")
                     raise Exception
         except Exception:
             print("\nCONFIG FORMAT ERROR.\n")
@@ -61,15 +61,17 @@ def directory():
     return True
 
 
+def lines(script):
+    return [x.replace('\n', '').split('#')[0].strip() for x in script.readlines()]
+
+
 def translator(script):
+    values = lines(script)
     instructions = []
-    while True:
-        line = script.readline()
-        line = line.replace('\n', '')
-        if len(line) < 1:
-            break
-        line = line.split(' ')
-        instructions.append(Instruction(int(line[0]), line[1], line[2:len(line)]))
+    for line in values:
+        if len(line) > 0:
+            line = line.split(' ')
+            instructions.append(Instruction(int(line[0]), line[1], line[2:len(line)]))
     return instructions
 
 

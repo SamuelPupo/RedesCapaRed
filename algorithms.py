@@ -13,18 +13,18 @@ def define(error_detection: str):
 
 
 def create(error_detection: Detection, data: list):
-    if error_detection == Detection.HAMMING:
-        return encode_h(data)
-    elif error_detection == Detection.CRC:
+    if error_detection == Detection.CRC:
         return encode_c(data)
+    elif error_detection == Detection.HAMMING:
+        return encode_h(data)
     return []
 
 
 def detect(error_detection: Detection, data: list, code: list):
     if len(data) < 1:
         return False
-    if error_detection == Detection.HAMMING:
+    if error_detection == Detection.CRC:
+        return not decode_c(data, code).__contains__(1)
+    elif error_detection == Detection.HAMMING:
         return decode_h(data, code)
-    elif error_detection == Detection.CRC:
-        return not decode_c(code).__contains__(1)
-    return []
+    return False

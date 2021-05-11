@@ -3,8 +3,12 @@ from algorithms import define, create, detect
 from converter import binary_to_hexadecimal, binary_to_decimal, hexadecimal_to_binary, decimal_to_binary
 
 
+arpq = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0]
+arpr = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1]
+
+
 class Host(Device):
-    def __init__(self, signal_time: int, error_detection: str, name: str, mac: str = "FFFF", ip: tuple = None):
+    def __init__(self, signal_time: int, error_detection: str, name: str, mac: str = "FFFF", ip: tuple = (0, 0, 0, 0)):
         super().__init__(name, 1)
         self.signal_time = signal_time
         self.error_detection = define(str.upper(error_detection))
@@ -13,13 +17,11 @@ class Host(Device):
         self.table = dict()
         self.transmitting_started = -1
         self.data = []
-        self.data_pointer = [0, 0]
+        self.data_pointer = 0
         self.resend_attempts = 0
         self.waiting_packet = []
-        self.arpq = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0]
         self.receiving_data = [[] for _ in range(6)]
         self.receiving_data_pointer = [0, 0]
-        self.arpr = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1]
         file = open("output/{}_data.txt".format(name), 'w')
         file.close()
         file = open("output/{}_payload.txt".format(name), 'w')
@@ -28,7 +30,7 @@ class Host(Device):
     def connect(self, time: int, port: int, other_device, other_port: int):
         super().connect(time, port, other_device, other_port)
         if self.ports[0].data != Data.NULL:
-            self.data_pointer[1] += 1
+            self.data_pointer += 1
 
     def disconnect(self, time: int, port: int):
         cable = self.ports[port]
@@ -40,15 +42,24 @@ class Host(Device):
         if type(device) != Host and len(self.receiving_data[0]) > 0:
             self.receive_bit(time, cable.port, Data.NULL, True)
         super().disconnect(time, port)
-        self.data_pointer[1] = 0  # Comment if the the host must not restart sending data in case of disconnection
+        self.data_pointer = 0  # Comment if the the host must not restart sending data in case of disconnection
 
     def collision(self, string: str):
         super().collision(string)
-        if self.data_pointer[1] > 0:
-            self.data_pointer[1] -= 1  # Comment if the the host must not wait to resend data in case of collision
+        if self.data_pointer > 0:
+            self.data_pointer -= 1  # Comment if the the host must not wait to resend data in case of collision
         self.resend_attempts += 1
         if self.resend_attempts == 50:
             self.reset()
+        self.ports[0].data = Data.NULL
+
+    def reset(self):
+        self.data.pop(0)
+        if len(self.data) < 1:
+            self.transmitting_started = -1
+        self.data_pointer = 0
+        self.resend_attempts = 0
+        self.ports[0].data = Data.NULL
 
     def receive_bit(self, time: int, port: int, data: Data, disconnected: bool = False):
         super().receive_bit(time, port, data, disconnected)
@@ -94,13 +105,13 @@ class Host(Device):
                 ip = data[32:]
                 ip = (binary_to_decimal(ip[:8]), binary_to_decimal(ip[8:16]), binary_to_decimal(ip[16:24]),
                       binary_to_decimal(ip[24:]))
-                origen_ip = "NULL"
+                origen_ip = "0.0.0.0"
                 action = ""
-                if self.arpq == arp:
+                if arpq == arp:
                     if self.ip == ip:
                         action = "ARPQ"
                         self.arp(time, hexadecimal_to_binary(str(sender)))
-                elif self.arpr == arp:
+                elif arpr == arp:
                     self.table[tuple(ip)] = sender
                     origen_ip = "{}.{}.{}.{}".format(ip[0], ip[1], ip[2], ip[3])
                     action = "ARPR"
@@ -144,7 +155,7 @@ class Host(Device):
         self.receiving_data_pointer = [0, 0]
 
     def arp(self, time: int, destination_mac: list = None):
-        self.start_send(time, self.arpr + self.binary_ip(), destination_mac)
+        self.start_send(time, arpr + self.binary_ip(), destination_mac)
 
     def binary_ip(self):
         return decimal_to_binary(self.ip[0]) + decimal_to_binary(self.ip[1]) + decimal_to_binary(self.ip[2]) + \
@@ -170,33 +181,29 @@ class Host(Device):
         if disconnected:
             data = Data.NULL
         else:
-            frame = self.data_pointer[0]
-            pointer = self.data_pointer[1]
-            if pointer < len(self.data[frame]):
-                data = Data.ONE if self.data[frame][pointer] == 1 else Data.ZERO
-                self.data_pointer[1] += 1
+            pointer = self.data_pointer
+            if len(self.data) > 0 and pointer < len(self.data[0]):
+                data = Data.ONE if self.data[0][pointer] == 1 else Data.ZERO
+                self.data_pointer += 1
             else:
                 data = Data.NULL
-                self.data_pointer[0] += 1
-                self.data_pointer[1] = 0
-                frame += 1
-                if frame >= len(self.data):
-                    self.reset()
+                self.data.pop(0)
+                self.data_pointer = 0
+                if len(self.data) < 1:
+                    self.transmitting_started = -1
+                    self.data = []
+                    self.data_pointer = 0
+                    self.resend_attempts = 0
+                    self.ports[0].data = Data.NULL
         self.send_bit(time, data, disconnected)
         if self.ports[0].device is None:
-            self.data_pointer[1] -= 1  # Comment if the the host must not wait to resend data in case of disconnection
+            self.data_pointer -= 1  # Comment if the the host must not wait to resend data in case of disconnection
             self.resend_attempts += 1
             if self.resend_attempts == 25:
                 self.reset()
-        elif self.data_pointer[1] > 0:
+        elif self.data_pointer > 0:
             self.resend_attempts = 0
         return data if not disconnected and len(self.data) < 1 else data.ZERO
-
-    def reset(self):
-        self.transmitting_started = -1
-        self.data = []
-        self.data_pointer = [0, 0]
-        self.ports[0].data = Data.NULL
 
     def set_mac(self, mac: str):
         if mac == "FFFF":
@@ -221,7 +228,7 @@ class Host(Device):
             destination_mac = hexadecimal_to_binary(self.table[destination_ip])
         except Exception:
             self.waiting_packet.append((destination_ip, data))
-            self.start_send(time, self.arpq + binary_destination_ip)
+            self.start_send(time, arpq + binary_destination_ip)
         else:
             origen_ip = self.binary_ip()
             ttl = [0, 0, 0, 0, 0, 0, 0, 0]

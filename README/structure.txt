@@ -1,20 +1,34 @@
+input: directorio que almacena los datos de entrada del programa
+	config.txt: configuracion de la ejecucion ("signal_time", "error_detection")
+	script.txt: instrucciones a ejecutar
+
+
+output: directorio que almacena los datos de salida generados por el programa
+	general.bin: instrucciones ejecutadas
+	{device}.txt: bits enviados y recibidos por el dispositivo, momento en que sucedio y estado de la accion
+	{host}_data.txt: datos hexadecimales recibidos por la computadora, momento en que sucedio, computadora que lo envio y correctitud de la informacion
+	{host}_payload.txt: datos recibidos por la computadora en la capa de red, momento en que sucedio, computadora que lo envio y correctitud de la informacion
+
+
 main.py:
 	main: metodo principal que ejecuta todo el programa
 	directory: metodo que reinicia el directorio "output"
-	translator: metodo que genera las instrucciones a partir del texto de "script.txt"
-
+	translator: metodo que genera las instrucciones a partir del texto de "input/script.txt"
 
 master.py:
 	master: metodo que ejecuta las instrucciones
 	controller: metodo que identifica la instruccion a ejecutar
 
-
 instructions.py:
 	create: metodo que genera los datos para crear un nuevo dispositivo
+	write: metodo que escribe la instruccion a ejecutar en "output/general.bin"
 	connect: metodo que genera los datos para interconectar dos puertos de dos dispositivos
 	send: metodo que genera los datos para que una computadora los envie
 	disconnect: metodo que genera los datos para desconectar un puerto de un dispositivo
-
+	mac: metodo que genera la direccion "mac" de una computadora
+	send_frame: metodo que genera los datos hexadecimales para que una computadora los envie
+	ip: metodo que genera la direccion "ip" de una computadora
+	send_packet: metodo que genera los datos para que una computadora los envie en la capa de red
 
 layer.py:
 	Layer: clase que abarca a toda la capa fisica y sus acciones
@@ -22,52 +36,80 @@ layer.py:
 	       connect: metodo que interconecta dos puertos de dos dispositivos existentes en la capa fisica
 	       send: metodo que le da datos a una computadora para que esta los envie
 	       disconnect: metodo que desconecta un puerto de un dispositivo
-
+	       mac: metodo que designa la direccion "mac" de una computadora
+	       send_frame: metodo que le da datos hexadecimales a una computadora para que esta los envie
+	       ip: metodo que designa la direccion "ip" de una computadora
+	       get_ip: metodo que cambia el formato de la direccion "ip"
+	       send_packet: metodo que le da datos a una computadora para que esta los envie en la capa de red
 
 objects.py:
-	Instruction: clase que abarca a la estructura de una instruccion
+	Instruction: clase que responde a la estructura de una instruccion
 
 	Data (hereda de Enum): clase que responde a los estados de la informacion a transmitir
 
-	Cable: clase que abarca los cables que conectan a los dispositivos de la capa fisica
+	Cable: clase que abarca a los cables que conectan a los dispositivos de la capa fisica
 		update: metodo que permite actualizar la conexion del cable
-
 
 device.py:
 	Device: clase que abarca a los dispositivos de la capa fisica
-		connect: metodo que conecta un puerto del dispositivo con otro puerto
-		collision: metodo que se ejecuta cuando ocurre una colision
+		connect: metodo que conecta un puerto del dispositivo con otro puerto de otro dispositivo
 		disconnect: metodo que desconecta un puerto del dispositivo
-		write: metodo que actualiza el "device.txt" del dispositivo
-		receive_bit: metodo que se ejecuta cuando se recibe un bit
-		send_bit: metodo que envia un bit desde un puerto del dispositivo a otro puerto		
-
+		collision: metodo que se ejecuta cuando ocurre una colision
+		write: metodo que actualiza el "output/{device}.txt" del dispositivo
+		receive_bit: metodo que se ejecuta cuando se recibe un bit desde otro dispositivo
+		send_bit: metodo que envia un bit a otro dispositivo		
+		transmission: metodo que devuelve si el envio de un bit fue exitoso o no		
 
 hub.py:
-	Hub (hereda de Device):
-		receiving: metodo que resuelve si el puerto que se revisa es por donde el concentrador recibe la informacion
-
+	Hub (hereda de Device): clase que abarca a las concentradores
+		transmitting: metodo que permite conocer si el concentrador esta enviando informacion
+		receiving: metodo que resuelve si un puerto dado del concentrador es por donde recibe la informacion
+		receiving_from: metodo que permite conocer si un puerto dado del concentrador esta recibiendo informacion
+		sending_collision: metodo que señala si al enviar un bit hubo una colision
 
 host.py:
 	Host (hereda de Device): clase que abarca a las computadoras
+		reset: metodo que limpia los datos a enviar por la computadora
+		reset_receiving: metodo que limpia los datos recibidos por la computadora
+		arp: metodo que envia "ARPR" desde la computadora hacia otro dispositivo
+		binary_ip: metodo que calcula el valor binario de la direccion "ip"
 		start_send: metodo que se ejecuta cuando la computadora recibe informacion que debe enviar
-		send: metodo que envia informacion desde la computadora hacia otros dispositivos
-
+		send: metodo que envia informacion desde la computadora hacia otro dispositivo
+		set_mac: metodo que actualiza la direccion "mac" de la computadora
+		set_ip: metodo que actualiza la direccion "ip" de la computadora
+		packet: metodo que se ejecuta cuando la computadora recibe informacion que debe enviar en la capa de red
 
 switch.py:
 	Switch (hereda de Device): clase que abarca a los conmutadores
-		send_port: metodo que envia informacion desde los puertos de los conmutadores hacia otros dispositivos
-
+		mac_map: metodo que actualiza la tabla de direcciones "mac" del conmutador
+		destination: metodo que actualiza el enlace entre dos puertos del conmutador para reenviar por uno la informacion que se recibe por otro
+		end_frame: metodo que se ejecuta cuando se termina de recibir un bloque completo de informacion
+		send: metodo que permite enviar informacion desde los puertos del conmutador hacia otros dispositivos
+		send_port: metodo que envia informacion desde un puerto del conmutador hacia otros dispositivos
+		reset: metodo que limpia los datos recibidos y a reenviar por el conmutador
 
 converter.py:
-	posee metodos que permiten convertir numeros a diferentes bases (binaria, decimal, hexadecimal)
+	string_to_hexadecimal: metodo que transforma una cadena de caracteres correcta en un numero hexadecimal
+	hexadecimal_to_binary: metodo que transforma un numero hexadecimal en uno binario
+	decimal_to_binary: metodo que transforma un numero decimal en uno binario
+	binary_to_hexadecimal: metodo que transforma un numero binario en uno hexadecimal
+	binary_to_decimal: metodo que transforma un numero binario en uno decimal
 
 algorithms.py:
-	detecta y utiliza el metodo seleccionado de deteccion de errores.
+	define: metodo que detecta y establece el algoritmo de deteccion de errores a utilizar
+	create: metodo que permite generar el codigo de verificacion de los datos
+	detect: metodo que permite generar el codigo de verificacion de los datos
 
 crc.py:
-	metodo de comprobacion de errores CRC
+	encode: metodo que genera el codigo de verificacion de los datos
+	decode: metodo que analiza el codigo de verificacion de los datos
+	mod2div: metodo que calcula el codigo de verificacion a partir de los datos
+	empty: metodo que genera una lista de 0 del tamaño dado
+	xor: metodo que opera "xor" entre dos numeros binarios
 
 hamming.py:
-	metodo de comprobacion de errores Hamming
-
+	encode: metodo que genera el codigo de verificacion de los datos
+	decode: metodo que analiza el codigo de verificacion de los datos
+	parity_bits: metodo que calcula los bits de paridad a partir de los datos
+	redundant_bits: metodo que calcula los bits redundates de los datos
+	count: metodo que calcula la cantidad de bits redundates de los datos

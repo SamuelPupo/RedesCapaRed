@@ -26,5 +26,5 @@ class Cable:
 
 
 class Detection(Enum):
-    HAMMING = 0
-    CRC = 1
+    CRC = 0
+    HAMMING = 1

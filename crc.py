@@ -5,13 +5,13 @@ key_ = [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
 def encode(data: list, key: list = None):
     if key is None:
         key = key_
-    return data + mod2div(data + empty(len(key) - 1), key)
+    return mod2div(data + empty(len(key) - 1), key)
 
 
-def decode(code: list, key: list = None):
+def decode(data: list, code: list, key: list = None):
     if key is None:
         key = key_
-    return mod2div(code + empty(len(key) - 1), key)
+    return mod2div(data + code + empty(len(key) - 1), key)
 
 
 def mod2div(dividend: list, divisor: list):

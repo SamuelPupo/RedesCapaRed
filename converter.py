@@ -12,7 +12,7 @@ def decimal_to_binary(integer: int):
 
 
 def binary_to_hexadecimal(binary: list):
-    return str.upper(hex(binary_to_decimal(binary))[2:]) if len(binary) > 0 else ""
+    return str.upper(hex(binary_to_decimal(binary))[2:].zfill(int(len(binary) / 4))) if len(binary) > 0 else ""
 
 
 def binary_to_decimal(binary: list):

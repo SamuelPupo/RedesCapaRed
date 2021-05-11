@@ -37,8 +37,8 @@ def connect(layer: Layer, instruction: Instruction):
     port1 = str.split(instruction.details[0], '_')
     port2 = str.split(instruction.details[1], '_')
     layer.connect(instruction.time, port1[0], int(port1[1]) - 1, port2[0], int(port2[1]) - 1)
-    write(instruction.time, "connect, device_x={}, port_x={}, device_y={}, port_y={}\n". format(port1[0], port1[1],
-                                                                                                port2[0], port1[1]))
+    write(instruction.time, "connect, device_x={}, port_x={}, device_y={}, port_y={}\n".format(port1[0], port1[1],
+                                                                                               port2[0], port2[1]))
 
 
 def send(layer: Layer, instruction: Instruction):

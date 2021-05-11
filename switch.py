@@ -12,19 +12,19 @@ class Switch(Device):
         self.receiving_data_pointer = [[0, 0, 0] for _ in range(self.ports_number)]
         self.destination_ports = dict()
         self.transmitting_started = [-1 for _ in range(self.ports_number)]
-        self.data_pointer = [[0, 0, 0] for _ in range(self.ports_number)]
+        self.data_pointer = [[0, 0] for _ in range(self.ports_number)]
         self.resend_attempts = [0 for _ in range(self.ports_number)]
         self.origen_ports = [-1 for _ in range(no_ports)]
 
     def disconnect(self, time: int, port: int):
+        if self.destination_ports.keys().__contains__(port) and type(self.ports[port].device) != Host:
+            self.receive_bit(time, port, Data.NULL, True)
         disconnected = []
         for key in self.macs_map.keys():
             if self.macs_map[key] == port:
                 disconnected.append(key)
         for key in disconnected:
             self.macs_map.pop(key)
-        if self.destination_ports.keys().__contains__(port) and type(self.ports[port].device) != Host:
-            self.receive_bit(time, port, Data.NULL, True)
         super().disconnect(time, port)
 
     def receive_bit(self, time: int, port: int, data: Data, disconnected: bool = False):
@@ -49,12 +49,14 @@ class Switch(Device):
                 else:
                     self.end_frame(port)
         elif section > 0 or pointer > 0:
-            if pointer > 0:
+            if pointer > 0 and not disconnected:
                 self.mac_map(time, port, section, receiving_data)
             self.end_frame(port)
 
     def mac_map(self, time: int, port: int, section: int, receiving_data: list):
         mac = binary_to_hexadecimal(receiving_data[section])
+        if len(mac) != 4:
+            return
         if section == 0:
             self.destination(time, port, mac)
         elif section == 1 and mac != "FFFF":
@@ -100,20 +102,14 @@ class Switch(Device):
         ended = False
         receiving_data = self.receiving_data[port]
         pointer = self.data_pointer[port]
-        if len(receiving_data[pointer[0]][pointer[1]]) < 1 or pointer[0] >= len(self.destination_ports[port]):
-            ended = self.reset(port, pointer)
-            if not ended:
-                return True
-            destination_ports = self.destination_ports[port][pointer[0] - 1]
+        destination_ports = self.destination_ports[port][0]
+        if pointer[0] >= len(receiving_data[0]) or len(receiving_data[0][pointer[0]]) < 1:
+            ended = True
             data = None
         else:
-            destination_ports = self.destination_ports[port][pointer[0]]
-            data = receiving_data[pointer[0]][pointer[1]][pointer[2]]
-            pointer[2] += 1
-            if pointer[2] >= len(receiving_data[pointer[0]][pointer[1]]):
-                pointer[1] += 1
-                pointer[2] = 0
-            if pointer[1] >= len(receiving_data[pointer[0]]):
+            data = receiving_data[0][pointer[0]][pointer[1]]
+            pointer[1] += 1
+            if pointer[1] >= len(receiving_data[0][pointer[0]]):
                 pointer[0] += 1
                 pointer[1] = 0
         sent = False
@@ -125,7 +121,6 @@ class Switch(Device):
             string = "time={}, port={}, resend={}, transmission=".format(time, p + 1, data_string)
             if origen_ports == -1 or origen_ports == port:
                 self.origen_ports[p] = port
-                sent = True
                 cable = d[1]
                 cable.data = Data.NULL if data is None else Data.ZERO if data == 0 else Data.ONE
                 device = cable.device
@@ -133,38 +128,37 @@ class Switch(Device):
                     self.write("{}incomplete, cause=not_connected\n".format(string))
                 else:
                     if device.sending_collision(cable.port):
-                        sent = False
+                        self.collision(string)
                     else:
                         self.write("{}successfully\n".format(string))
                         device.receive_bit(time, cable.port, cable.data, False)
-            if not sent:
-                self.collision(string)
-                if pointer[2] > 0:
-                    pointer[2] -= 1  # Comment if the the switch must not wait to resend data in case of collision
-                self.resend_attempts[port] += 1
-                if self.resend_attempts[port] >= 50:
-                    ended = self.reset(port, pointer)
-                    break
+                        sent = True
         self.write("\n")
+        self.reset(port, pointer, sent, ended)
+        return True
+
+    def reset(self, port, pointer, sent, ended):
+        receiving_data_pointer = self.receiving_data_pointer[port]
+        if not sent:
+            # Comment if the the switch must not wait to resend data in case of collision or disconnection
+            if pointer[1] > 0:
+                pointer[1] -= 1
+            self.resend_attempts[port] += 1
+            if self.resend_attempts[port] >= 50:
+                ended = receiving_data_pointer[0] > 0 or (receiving_data_pointer[1] < 1 and
+                                                          receiving_data_pointer[2] < 1)
         if ended:
-            destination_ports = self.destination_ports.pop(port)[self.data_pointer[port][0]]
+            self.receiving_data[port].pop(0)
+            if receiving_data_pointer[0] > 0:
+                receiving_data_pointer[0] -= 1
+            if receiving_data_pointer[1] < 1:
+                self.transmitting_started[port] = -1
+            self.resend_attempts[port] = 0
+            pointer[0] = 0
+            pointer[1] = 0
+            destination_ports = self.destination_ports[port].pop(0)
             for d in destination_ports:
                 d[1].data = Data.NULL
             for i in range(len(self.origen_ports)):
                 if self.origen_ports[i] == port:
                     self.origen_ports[i] = -1
-        return True
-
-    def reset(self, port, pointer):
-        receiving_data_pointer = self.receiving_data_pointer[port]
-        if receiving_data_pointer[1] > 0 or receiving_data_pointer[2] > 0:
-            return False
-        pointer[0] = 0
-        pointer[1] = 0
-        pointer[2] = 0
-        self.receiving_data[port] = [[[] for _ in range(6)]]
-        self.receiving_data_pointer[port] = [0, 0, 0]
-        self.transmitting_started[port] = -1
-        self.data_pointer[port] = [0, 0, 0]
-        self.resend_attempts[port] = 0
-        return True

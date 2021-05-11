@@ -66,6 +66,9 @@ class Layer:
         raise Exception
 
     def mac(self, host: str, address: str):
+        if len(address) != 4:
+            print("\nWRONG MAC SIZE.")
+            raise Exception
         for d in self.devices:
             if d.name == host:
                 if type(d) != Host:

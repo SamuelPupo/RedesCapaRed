@@ -1,15 +1,25 @@
 *En caso de colision o desconexion, la computadora puede esperar para reenviar la informacion o enviarla aunque esta se pierda.
-	-El primer caso es el que se encuentra por defecto, con 20 intentos de reenvio a lo sumo.
-	-Para el segundo caso, es necesario comentar en "host.py" las lineas 28, 69 y 117 (señaladas en el codigo con comentarios).
+	-El primer caso es el que se encuentra por defecto: las computadoras cuentan con 50 intentos de reenvio a lo sumo en caso de colision y 25, de desconexion;
+							    los conmutadores cuentan con 50 intentos de reenvio para ambos casos.
+	-Para el segundo caso, es necesario comentar: en "host.py" las lineas 45, 50 y 200 (señaladas en el codigo con comentarios);
+						      en "switch.py" la linea 145
 
-*Se detecta la colision solo si es con el dispositivo mas cercano.
-	-Si la colision es entre dos concentradores, se asume que la informacion de la computadora llego a algun dispositivo y no se perdio totalmente.
+*Siempre se detectan las colisiones.
+	-El uso de cables "duplex" hace que solo ocurran colisiones con los hub, que mantienen el uso de cables "simplex".
+	-Un dispositivo reconoce una colision cuando debe enviar un bit por un cable que ya estaba en uso por otro dispositivo.
+	-Las computadoras o los conmutadores solo la descubren si ocurre con el dispositivo conectado directamente.
+	-Si la colision es entre dos concentradores, se asume que la informacion de las computadoras llego a algun dispositivo y no se perdio totalmente.
 	
 *Puede ocurrir (durante un envio):
 	-Conexion de un nuevo dispositivo: este comienza a recibir la informacion a partir del momento en que se conecto.
-	-Desconexion de un dispositivo: si es la computadora origen del envio, esta debe decidir que hacer mientras esta desconectada (visto anteriormente);
+	-Desconexion de un dispositivo: si es el origen del envio, este debe decidir que hacer mientras esta desconectada (visto anteriormente);
 	                                si es otro dispositivo, deja de recibir la informacion a partir del momento en que se desconecto.
-	-Reconexion de un dispositivo con otro, ya sea este la computadora origen del envio o no.
-	-Conexion de dos dispositivos que se encuentran enviando a la misma vez: se genera una colision.
+	-Reconexion de un dispositivo con otro, ya sea este el origen del envio o no.
+	-Conexion de dos concentradores que se encuentran reenviando a la misma vez: se genera una colision.
 
 *No es posible conectar un dispositivo consigo mismo.
+
+*El algoritmo "hamming" original envia los bits de paridad mezclados con los datos originales.
+	-En este proyecto, al enviarlos por separado, se comparan los bits de paridad para comprobar el estado de los datos.
+
+*Al designarse una nueva direccion "ip", la computadora ejecuta un "ARPR" para actualizar las tablas de direcciones del resto con el nuevo valor.
