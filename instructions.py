@@ -22,6 +22,9 @@ def create(layer: Layer, instruction: Instruction):
     write(instruction.time, "create, device={}, name={}{}\n".format(device, name, ", ports_number={}".
                                                                     format(ports_number)
                                                                     if device == ("hub" or "switch") else ""))
+    file = open("output/devices.bin", 'a')
+    file.write("device={}, name={}, ports_number={}\n".format(device, name, ports_number))
+    file.close()
 
 
 def write(time: int, string: str):

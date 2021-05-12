@@ -1,0 +1,5 @@
+device=hub, name=h, ports_number=4
+device=host, name=pc, ports_number=1
+device=host, name=cp, ports_number=1
+device=host, name=pp, ports_number=1
+device=switch, name=sw, ports_number=3
