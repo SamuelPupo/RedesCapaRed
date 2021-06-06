@@ -1,6 +1,5 @@
 from hub import Hub
-from host import Host
-from switch import Switch
+from switch import Host, Switch
 from converter import hexadecimal_to_binary
 
 
@@ -8,17 +7,23 @@ class Layer:
     def __init__(self, signal_time: int, error_detection: str):
         self.signal_time = signal_time
         self.error_detection = error_detection
-        self.devices = set()
+        self.devices = list()
+        self.names = set()
         self.macs = set()
         self.ips = set()
 
     def create(self, device: str, name: str, ports_number: int = 1):
+        count = len(self.names)
+        self.names.add(name)
+        if count == len(self.names):
+            print("\nNAME ALREADY USED.")
+            raise Exception
         if device == "hub":
-            self.devices.add(Hub(name, ports_number))
+            self.devices.append(Hub(name, ports_number))
         elif device == "host":
-            self.devices.add(Host(self.signal_time, self.error_detection, name))
+            self.devices.append(Host(self.signal_time, self.error_detection, name))
         elif device == "switch":
-            self.devices.add(Switch(self.signal_time, name, ports_number))
+            self.devices.append(Switch(self.signal_time, name, ports_number))
 
     def connect(self, time: int, device1: str, port1: int, device2: str, port2: int):
         if device1 == device2:
@@ -65,13 +70,13 @@ class Layer:
         print("\nUNRECOGNIZED DEVICE.")
         raise Exception
 
-    def mac(self, host: str, address: str):
+    def mac(self, host: str, interface: int, address: str):
         if len(address) != 4:
             print("\nWRONG MAC SIZE.")
             raise Exception
         for d in self.devices:
             if d.name == host:
-                if type(d) != Host:
+                if type(d) == Hub:
                     print("\nWRONG MAC INSTRUCTION DEVICE TYPE.")
                     raise Exception
                 try:
@@ -84,7 +89,7 @@ class Layer:
                 if count == len(self.macs):
                     print("\nMAC ALREADY USED.")
                     raise Exception
-                d.set_mac(address)
+                d.set_mac(interface, address)
                 return
         print("\nUNRECOGNIZED DEVICE.")
         raise Exception
@@ -113,7 +118,7 @@ class Layer:
         print("\nUNRECOGNIZED DEVICE.")
         raise Exception
 
-    def ip(self, time: int, host: str, address: str):
+    def ip(self, time: int, host: str, interface: int, address: str, mask: str):
         for d in self.devices:
             if d.name == host:
                 if type(d) != Host:
@@ -124,25 +129,25 @@ class Layer:
                 if count == len(self.ips):
                     print("\nIP ALREADY USED.")
                     raise Exception
-                d.set_ip(time, self.get_ip(address))
+                d.set_ip(time, interface, self.get_ip(address, "IP"), self.get_ip(mask, "MASK"))
                 return
         print("\nUNRECOGNIZED DEVICE.")
         raise Exception
 
     @staticmethod
-    def get_ip(ip: str):
+    def get_ip(ip: str, name: str):
         ip = ip.split('.')
         if len(ip) != 4:
-            print("\nWRONG IP FORMAT.")
+            print("\nWRONG {} FORMAT.".format(name))
             raise Exception
         try:
             ip = tuple([int(x) for x in ip])
         except Exception:
-            print("\nIP ISN'T DECIMAL.")
+            print("\n{} ISN'T DECIMAL.".format(name))
             raise Exception
         for i in ip:
             if i < 0 or i > 255:
-                print("\nWRONG IP VALUE.")
+                print("\nWRONG {} VALUE.".format(name))
                 raise Exception
         return ip
 
@@ -160,7 +165,7 @@ class Layer:
                 if len(data) % 8 != 0:
                     print("\nDATA ISN'T A MULTIPLE OF 8.")
                     raise Exception
-                d.packet(time, data, self.get_ip(destination_ip))
+                d.send_packet(time, data, self.get_ip(destination_ip, "IP"))
                 return
         print("\nUNRECOGNIZED DEVICE.")
         raise Exception

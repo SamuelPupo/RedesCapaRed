@@ -2,9 +2,9 @@
 0 create host pc
 10 create host cp
 18 mac pc A4B5
-20 ip pc 10.6.122.44
+20 ip pc 10.6.122.44 255.255.0.0
 36 mac cp F2D2
-37 ip cp 10.6.122.50
+37 ip cp 10.6.122.50 255.255.255.0
 2000 connect pc_1 cp_1
 2001 send_packet pc 10.6.122.50 AAAABBBBCCCCDDDDEEEEFFFF
 10100 create host pp
@@ -12,7 +12,7 @@
 10150 connect pc_1 h_1
 10153 connect h_2 cp_1
 10154 connect pp_1 h_3
-10200 ip pp 10.6.122.31
+10200 ip pp 10.6.122.31 255.0.0.0
 12135 send_packet cp 10.6.122.31 1111
 14000 create switch sw 3
 14900 connect sw_3 h_3

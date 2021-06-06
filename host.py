@@ -1,19 +1,22 @@
 from hub import Device, Data
-from algorithms import define, create, detect
+from algorithms import define, detect, create
 from converter import binary_to_hexadecimal, binary_to_decimal, hexadecimal_to_binary, decimal_to_binary
 
 
-arpq = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0]
-arpr = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1]
+arpq_ = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0]
+arpr_ = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1]
 
 
 class Host(Device):
-    def __init__(self, signal_time: int, error_detection: str, name: str, mac: str = "FFFF", ip: tuple = (0, 0, 0, 0)):
+    def __init__(self, signal_time: int, error_detection: str, name: str, mac: str = "FFFF", ip: tuple = (0, 0, 0, 0),
+                 mask: tuple = (0, 0, 0, 0)):
         super().__init__(name, 1)
         self.signal_time = signal_time
         self.error_detection = define(str.upper(error_detection))
         self.mac = mac
         self.ip = ip
+        self.mask = mask
+        self.subnet, self.broadcast = self.subnet_broadcast()
         self.table = dict()
         self.transmitting_started = -1
         self.data = []
@@ -22,12 +25,26 @@ class Host(Device):
         self.waiting_packet = []
         self.receiving_data = [[] for _ in range(6)]
         self.receiving_data_pointer = [0, 0]
-        file = open("output/{}_data.txt".format(name), 'w')
+        self.start()
+
+    def subnet_broadcast(self):
+        ip = self.ip
+        mask = self.mask
+        subnet = [ip[i] & mask[i] for i in range(len(ip))]
+        broadcast = subnet.copy()
+        for i in range(len(subnet) - 1, -1, -1):
+            if subnet[i] != 0:
+                break
+            broadcast[i] = 255
+        return tuple(subnet), tuple(broadcast)
+
+    def start(self):
+        file = open("output/{}_data.txt".format(self.name), 'w')
         file.close()
-        file = open("output/{}_payload.txt".format(name), 'w')
+        file = open("output/{}_payload.txt".format(self.name), 'w')
         file.close()
 
-    def connect(self, time: int, port: int, other_device, other_port: int):
+    def connect(self, time: int, port: int, other_device: Device, other_port: int):
         super().connect(time, port, other_device, other_port)
         if self.ports[0].data != Data.NULL:
             self.data_pointer += 1
@@ -92,74 +109,93 @@ class Host(Device):
                     self.receiving_data[section] = binary_to_decimal(self.receiving_data[section]) * 8
             self.reset_receiving(time)
 
-    def reset_receiving(self, time):
-        destination = self.receiving_data[0]
+    def reset_receiving(self, time: int):
+        receiving_data = self.receiving_data
+        destination = receiving_data[0]
         if destination == self.mac or destination == "FFFF":
-            sender = self.receiving_data[1]
-            data = self.receiving_data[4]
-            state = "ERROR" if self.receiving_data[2] != len(self.receiving_data[4]) or \
-                self.receiving_data[3] != len(self.receiving_data[5]) or \
-                not detect(self.error_detection, self.receiving_data[4], self.receiving_data[5]) else "OK"
-            if len(data) == 64:
-                arp = data[:32]
-                ip = data[32:]
-                ip = (binary_to_decimal(ip[:8]), binary_to_decimal(ip[8:16]), binary_to_decimal(ip[16:24]),
-                      binary_to_decimal(ip[24:]))
-                origen_ip = "0.0.0.0"
-                action = ""
-                if arpq == arp:
-                    if self.ip == ip:
-                        action = "ARPQ"
-                        self.arp(time, hexadecimal_to_binary(str(sender)))
-                elif arpr == arp:
-                    self.table[tuple(ip)] = sender
-                    origen_ip = "{}.{}.{}.{}".format(ip[0], ip[1], ip[2], ip[3])
-                    action = "ARPR"
-                    for p in self.waiting_packet:
-                        if p[0] == ip:
-                            self.packet(time, p[1], ip)
-                            break
-                if len(action) > 0:
-                    file = open("output/{}_payload.txt".format(self.name), 'a')
-                    file.write("time={}, host_ip={}, action={}\n".format(time, origen_ip, action))
-                    file.close()
-            else:
-                if len(data) >= 88:
-                    destination_ip = data[:32]
-                    destination_ip = (binary_to_decimal(destination_ip[:8]), binary_to_decimal(destination_ip[8:16]),
-                                      binary_to_decimal(destination_ip[16:24]), binary_to_decimal(destination_ip[24:]))
-                    origen_ip = data[32:64]
-                    origen_ip = (binary_to_decimal(origen_ip[:8]), binary_to_decimal(origen_ip[8:16]),
-                                 binary_to_decimal(origen_ip[16:24]), binary_to_decimal(origen_ip[24:]))
-                    # ttl = data[64:72]
-                    # protocol = data[72:80]
-                    length = binary_to_decimal(data[80:88]) * 8
-                    packet_data = data[88:]
+            sender = receiving_data[1]
+            data = receiving_data[4]
+            state = "ERROR" if receiving_data[2] != len(receiving_data[4]) or \
+                receiving_data[3] != len(receiving_data[5]) or \
+                not detect(self.error_detection, receiving_data[4], receiving_data[5]) else "OK"
+            if state != "ERROR":
+                if len(data) == 64:
+                    self.arp(time, data, str(sender))
+                elif len(data) >= 88:
+                    destination_ip = self.tuple_ip(data[:32])
                     if self.ip == destination_ip:
-                        file = open("output/{}_payload.txt".format(self.name), 'a')
+                        origen_ip = self.tuple_ip(data[32:64])
+                        # ttl = data[64:72]
+                        # protocol = data[72:80]
+                        length = binary_to_decimal(data[80:88]) * 8
+                        packet_data = data[88:]
                         origen_ip = "{}.{}.{}.{}".format(origen_ip[0], origen_ip[1], origen_ip[2], origen_ip[3])
                         packet_data = binary_to_hexadecimal(packet_data)
-                        file.write("time={}, host_ip={}, data={}".format(time, origen_ip,
-                                                                         packet_data if len(packet_data) > 0
-                                                                         else "NULL"))
-                        file.write(", state={}\n".format("ERROR" if length / 4 != len(packet_data) or state == "ERROR"
-                                                         else "OK"))
-                        file.close()
-            file = open("output/{}_data.txt".format(self.name), 'a')
-            data = binary_to_hexadecimal(data)
-            file.write("time={}, host_mac={}, data={}".format(time, sender if len(sender) > 0 else "FFFF",
-                                                              data if len(data) > 0 else "NULL"))
-            file.write(", state={}\n".format(state))
-            file.close()
+                        self.write_payload(time, origen_ip,
+                                           "data={}, state={}".format(packet_data if len(packet_data) > 0 else "NULL",
+                                                                      "ERROR" if length / 4 != len(packet_data)
+                                                                      else "OK"))
+            self.write_data(time, str(sender), data, state)
         self.receiving_data = [[] for _ in range(6)]
         self.receiving_data_pointer = [0, 0]
 
-    def arp(self, time: int, destination_mac: list = None):
-        self.start_send(time, arpr + self.binary_ip(), destination_mac)
+    def arp(self, time: int, data: list, sender: str):
+        arp = data[:32]
+        destination_ip = self.tuple_ip(data[32:])
+        origen_ip = "0.0.0.0"
+        action = ""
+        if arpq_ == arp:
+            if self.ip == destination_ip:
+                action = "ARPQ"
+                self.arpr(time, hexadecimal_to_binary(sender))
+        elif arpr_ == arp:
+            self.table[tuple(destination_ip)] = sender
+            origen_ip = "{}.{}.{}.{}".format(destination_ip[0], destination_ip[1], destination_ip[2], destination_ip[3])
+            action = "ARPR"
+            for p in self.waiting_packet:
+                if p[0] == destination_ip:
+                    self.send_packet(time, p[1], destination_ip)
+                    break
+        if len(action) > 0:
+            self.write_payload(time, origen_ip, "action={}".format(action))
 
-    def binary_ip(self):
-        return decimal_to_binary(self.ip[0]) + decimal_to_binary(self.ip[1]) + decimal_to_binary(self.ip[2]) + \
-               decimal_to_binary(self.ip[3])
+    @staticmethod
+    def tuple_ip(destination_ip: list):
+        return (binary_to_decimal(destination_ip[:8]), binary_to_decimal(destination_ip[8:16]),
+                binary_to_decimal(destination_ip[16:24]), binary_to_decimal(destination_ip[24:]))
+
+    def write_data(self, time: int, sender: str, data: list, state: str):
+        file = open("output/{}_data.txt".format(self.name), 'a')
+        data = binary_to_hexadecimal(data)
+        file.write("time={}, host_mac={}, data={}, state={}\n\n".format(time, sender if len(sender) > 0 else "FFFF",
+                                                                        data if len(data) > 0 else "NULL", state))
+        file.close()
+
+    def arpr(self, time: int, destination_mac: list = None):
+        self.start_send(time, arpr_ + self.binary_ip(self.ip), destination_mac)
+
+    def send_packet(self, time: int, data: list, destination_ip: tuple):
+        binary_destination_ip = self.binary_ip(destination_ip)
+        try:
+            destination_mac = hexadecimal_to_binary(self.table[destination_ip])
+        except Exception:
+            self.waiting_packet.append((destination_ip, data))
+            self.start_send(time, arpq_ + binary_destination_ip)
+        else:
+            origen_ip = self.binary_ip(self.ip)
+            ttl = [0, 0, 0, 0, 0, 0, 0, 0]
+            protocol = [0, 0, 0, 0, 0, 0, 0, 0]
+            length = decimal_to_binary(int(len(data) / 8))
+            self.start_send(time, binary_destination_ip + origen_ip + ttl + protocol + length + data, destination_mac)
+
+    def write_payload(self, time: int, host_ip: str, string: str):
+        file = open("output/{}_payload.txt".format(self.name), 'a')
+        file.write("time={}, host_ip={}, {}\n\n".format(time, host_ip, string))
+        file.close()
+
+    @staticmethod
+    def binary_ip(ip: tuple):
+        return decimal_to_binary(ip[0]) + decimal_to_binary(ip[1]) + decimal_to_binary(ip[2]) + decimal_to_binary(ip[3])
 
     def start_send(self, time: int, data: list, destination_mac: list = None):
         if destination_mac is None:
@@ -205,33 +241,32 @@ class Host(Device):
             self.resend_attempts = 0
         return data if not disconnected and len(self.data) < 1 else data.ZERO
 
-    def set_mac(self, mac: str):
+    def set_mac(self, interface: int, mac: str):
+        if interface != 0:
+            print("\nWRONG MAC INTERFACE.")
+            raise Exception
         if mac == "FFFF":
-            print("WRONG MAC ADDRESS.")
+            print("\nWRONG MAC ADDRESS.")
             raise Exception
         self.mac = mac
 
-    def set_ip(self, time: int, ip: tuple):
-        if ip[2] == 0 or ip[2] == 255 or ip[3] == 0 or ip[3] == 255:
-            print("WRONG IP ADDRESS.")
+    def set_ip(self, time: int, interface: int, ip: tuple, mask: tuple):
+        if interface != 0:
+            print("\nWRONG IP INTERFACE.")
             raise Exception
+        if ip[2] == 0 or ip[2] == 255 or ip[3] == 0 or ip[3] == 255:
+            print("\nWRONG IP ADDRESS.")
+            raise Exception
+        for i in range(len(mask)):
+            if mask[i] != 255:
+                for j in range(i, len(mask)):
+                    if mask[i] != 0:
+                        print("\nWRONG MASK ADDRESS.")
+                        raise Exception
+                break
         self.ip = ip
-        self.table[self.ip] = self.mac
+        self.mask = mask
+        self.subnet, self.broadcast = self.subnet_broadcast()
+        self.table[ip] = self.mac
         if self.ports[0].device is not None:
-            self.arp(time)
-
-    def packet(self, time: int, data: list, destination_ip: tuple):
-        binary_destination_ip = []
-        for x in destination_ip:
-            binary_destination_ip += decimal_to_binary(x)
-        try:
-            destination_mac = hexadecimal_to_binary(self.table[destination_ip])
-        except Exception:
-            self.waiting_packet.append((destination_ip, data))
-            self.start_send(time, arpq + binary_destination_ip)
-        else:
-            origen_ip = self.binary_ip()
-            ttl = [0, 0, 0, 0, 0, 0, 0, 0]
-            protocol = [0, 0, 0, 0, 0, 0, 0, 0]
-            length = decimal_to_binary(int(len(data) / 8))
-            self.start_send(time, binary_destination_ip + origen_ip + ttl + protocol + length + data, destination_mac)
+            self.arpr(time)

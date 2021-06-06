@@ -38,5 +38,5 @@ class Hub(Device):
     def receiving_from(self, port: int):
         return self.ports[port].data != Data.NULL
 
-    def sending_collision(self, port):
+    def sending_collision(self, port: int):
         return self.receiving_from(port) and not self.receiving(port)

@@ -1,4 +1,8 @@
 time=4531, host_ip=10.6.122.50, action=ARPR
+
 time=11470, host_ip=10.6.122.31, action=ARPR
+
 time=16420, host_ip=0.0.0.0, action=ARPQ
+
 time=19840, host_ip=10.6.122.31, data=22223333, state=OK
+

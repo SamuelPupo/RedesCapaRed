@@ -1,6 +1,6 @@
 from instructions import Layer, send, Instruction, create, connect, disconnect, mac, send_frame, ip, send_packet
-from objects import Data
-from switch import Host, Switch
+from switch import Host, Data, Switch
+from hub import Hub
 
 
 def master(signal_time: int, error_detection: str, instructions: list):
@@ -26,6 +26,7 @@ def master(signal_time: int, error_detection: str, instructions: list):
                 j += 1
             i = j
         time += 1
+    write(layer.devices)
     return time
 
 
@@ -62,3 +63,29 @@ def controller(layer: Layer, instruction: Instruction):
         print(" {}".format(instruction.details[i]), end="")
     print()
     return sent
+
+
+def write(devices: list):
+    devices.sort()
+    file = open("output/devices.bin", 'a')
+    for device in devices:
+        file.write("device={}, name={}".format(str(type(device)).split('\'')[1].split('.')[0], device.name))
+        if type(device) != Host:
+            file.write(", ports_number={}".format(device.ports_number))
+        if type(device) != Hub:
+            device_mac = device.mac
+            mac_address = device_mac
+            if type(device) != Host:
+                mac_address = "["
+                for i in range(len(device_mac)):
+                    mac_address += device_mac[i]
+                    if i < len(device_mac) - 1:
+                        mac_address += ", "
+                mac_address += "]"
+            file.write(", mac={}".format(mac_address))
+            if type(device) != Switch:
+                ip_address = device.ip
+                ip_address = "{}.{}.{}.{}".format(ip_address[0], ip_address[1], ip_address[2], ip_address[3])
+                file.write(", ip={}".format(ip_address))
+        file.write("\n")
+    file.close()

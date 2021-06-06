@@ -1,18 +1,18 @@
 time=0, instruction=create, device=hub, name=h, ports_number=4
 time=0, instruction=create, device=host, name=pc
 time=10, instruction=create, device=host, name=cp
-time=18, instruction=mac, host=pc, address=A4B5
-time=20, instruction=mac, host=pc, address=10.6.122.44
-time=36, instruction=mac, host=cp, address=F2D2
-time=37, instruction=mac, host=cp, address=10.6.122.50
+time=18, instruction=mac, device=pc, address=A4B5
+time=20, instruction=ip, host=pc, address=10.6.122.44, mask=255.255.0.0
+time=36, instruction=mac, device=cp, address=F2D2
+time=37, instruction=ip, host=cp, address=10.6.122.50, mask=255.255.255.0
 time=2000, instruction=connect, device_x=pc, port_x=1, device_y=cp, port_y=1
 time=2001, instruction=send_packet, host=pc, destination_ip=10.6.122.50, data=AAAABBBBCCCCDDDDEEEEFFFF
 time=10100, instruction=create, device=host, name=pp
-time=10104, instruction=mac, host=pp, address=C5D6
+time=10104, instruction=mac, device=pp, address=C5D6
 time=10150, instruction=connect, device_x=pc, port_x=1, device_y=h, port_y=1
 time=10153, instruction=connect, device_x=h, port_x=2, device_y=cp, port_y=1
 time=10154, instruction=connect, device_x=pp, port_x=1, device_y=h, port_y=3
-time=10200, instruction=mac, host=pp, address=10.6.122.31
+time=10200, instruction=ip, host=pp, address=10.6.122.31, mask=255.0.0.0
 time=12135, instruction=send_packet, host=cp, destination_ip=10.6.122.31, data=1111
 time=14000, instruction=create, device=switch, name=sw
 time=14900, instruction=connect, device_x=sw, port_x=3, device_y=h, port_y=3

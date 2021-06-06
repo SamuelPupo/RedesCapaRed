@@ -1,4 +1,5 @@
 from os import mkdir, listdir, remove, path
+
 from master import master, Instruction
 
 
@@ -22,7 +23,7 @@ def main():
             for line in values:
                 if len(line) < 1:
                     continue
-                line = line.split('=')
+                line = [x.strip() for x in line.split('=')]
                 if line[0] == "signal_time":
                     signal_time = int(line[1])
                 elif line[0] == "error_detection":
@@ -49,15 +50,12 @@ def directory():
     try:
         mkdir("output")
     except OSError:
-        print("\nOUTPUT DIRECTORY CREATION FAILED.")
         try:
             for file in listdir("output"):
                 remove(path.join("output", file))
         except OSError:
             print("\nOUTPUT DIRECTORY CLEANING FAILED.")
             return False
-    file = open("output/general.bin", 'w')
-    file.close()
     return True
 
 

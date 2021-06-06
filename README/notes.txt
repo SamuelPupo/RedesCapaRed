@@ -1,11 +1,10 @@
 *En caso de colision o desconexion, la computadora puede esperar para reenviar la informacion o enviarla aunque esta se pierda.
 	-El primer caso es el que se encuentra por defecto: las computadoras cuentan con 50 intentos de reenvio a lo sumo en caso de colision y 25, de desconexion;
 							    los conmutadores cuentan con 50 intentos de reenvio para ambos casos.
-	-Para el segundo caso, es necesario comentar: en "host.py" las lineas 45, 50 y 200 (señaladas en el codigo con comentarios);
-						      en "switch.py" la linea 145
+	-Para el segundo caso, es necesario comentar en "host.py" y "switch.py" las lineas señaladas en el codigo con comentarios.
 
 *Siempre se detectan las colisiones.
-	-El uso de cables "duplex" hace que solo ocurran colisiones con los hub, que mantienen el uso de cables "simplex".
+	-El uso de cables "duplex" hace que solo ocurran colisiones con los concentradores, que mantienen el uso de cables "simplex".
 	-Un dispositivo reconoce una colision cuando debe enviar un bit por un cable que ya estaba en uso por otro dispositivo.
 	-Las computadoras o los conmutadores solo la descubren si ocurre con el dispositivo conectado directamente.
 	-Si la colision es entre dos concentradores, se asume que la informacion de las computadoras llego a algun dispositivo y no se perdio totalmente.
@@ -22,4 +21,4 @@
 *El algoritmo "hamming" original envia los bits de paridad mezclados con los datos originales.
 	-En este proyecto, al enviarlos por separado, se comparan los bits de paridad para comprobar el estado de los datos.
 
-*Al designarse una nueva direccion "ip", la computadora ejecuta un "ARPR" para actualizar las tablas de direcciones del resto con el nuevo valor.
+*Al designarse una nueva direccion "ip", la computadora ejecuta un "ARPR" para actualizar con el nuevo valor las tablas de direcciones del resto de las computadoras conectadas.

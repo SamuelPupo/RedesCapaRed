@@ -1,5 +1,5 @@
+device=host, name=cp, mac=F2D2, ip=10.6.122.50
+device=host, name=pc, mac=A4B5, ip=10.6.122.44
+device=host, name=pp, mac=C5D6, ip=10.6.122.31
 device=hub, name=h, ports_number=4
-device=host, name=pc, ports_number=1
-device=host, name=cp, ports_number=1
-device=host, name=pp, ports_number=1
-device=switch, name=sw, ports_number=3
+device=switch, name=sw, ports_number=3, mac=[FFFF, FFFF, FFFF]

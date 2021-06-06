@@ -1,3 +1,6 @@
 time=13805, host_mac=F2D2, data=0A067A1F0A067A320000021111, state=OK
+
 time=17860, host_mac=A4B5, data=0A1B191B0A067A2C, state=OK
+
 time=24820, host_mac=C5D6, data=0A067A1F0A067A1F0000024444, state=OK
+

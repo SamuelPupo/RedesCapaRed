@@ -4,7 +4,8 @@ input: directorio que almacena los datos de entrada del programa
 
 
 output: directorio que almacena los datos de salida generados por el programa
-	general.bin: instrucciones ejecutadas
+	devices.bin: lista de dispositivos que componen la red
+	general.bin: lista de instrucciones ejecutadas
 	{device}.txt: bits enviados y recibidos por el dispositivo, momento en que sucedio y estado de la accion
 	{host}_data.txt: datos hexadecimales recibidos por la computadora, momento en que sucedio, computadora que lo envio y correctitud de la informacion
 	{host}_payload.txt: datos recibidos por la computadora en la capa de red, momento en que sucedio, computadora que lo envio y correctitud de la informacion
@@ -13,19 +14,22 @@ output: directorio que almacena los datos de salida generados por el programa
 main.py:
 	main: metodo principal que ejecuta todo el programa
 	directory: metodo que reinicia el directorio "output"
-	translator: metodo que genera las instrucciones a partir del texto de "input/script.txt"
+	lines: metodo que lee todas las lineas del texto de "input/script.txt"
+	translator: metodo que genera las instrucciones a partir de las lineas leidas
 
 master.py:
 	master: metodo que ejecuta las instrucciones
 	controller: metodo que identifica la instruccion a ejecutar
+	write: metodo que escribe la lista de dispositivos de la red en "output/devices.bin"
 
 instructions.py:
 	create: metodo que genera los datos para crear un nuevo dispositivo
 	write: metodo que escribe la instruccion a ejecutar en "output/general.bin"
 	connect: metodo que genera los datos para interconectar dos puertos de dos dispositivos
+	reverse: metodo que permite separar el nombre del dispositivo de su puerto señalado
 	send: metodo que genera los datos para que una computadora los envie
 	disconnect: metodo que genera los datos para desconectar un puerto de un dispositivo
-	mac: metodo que genera la direccion "mac" de una computadora
+	mac: metodo que genera la direccion "mac" de un dispositivo
 	send_frame: metodo que genera los datos hexadecimales para que una computadora los envie
 	ip: metodo que genera la direccion "ip" de una computadora
 	send_packet: metodo que genera los datos para que una computadora los envie en la capa de red
@@ -36,7 +40,7 @@ layer.py:
 	       connect: metodo que interconecta dos puertos de dos dispositivos existentes en la capa fisica
 	       send: metodo que le da datos a una computadora para que esta los envie
 	       disconnect: metodo que desconecta un puerto de un dispositivo
-	       mac: metodo que designa la direccion "mac" de una computadora
+	       mac: metodo que designa la direccion "mac" de un dispositivo
 	       send_frame: metodo que le da datos hexadecimales a una computadora para que esta los envie
 	       ip: metodo que designa la direccion "ip" de una computadora
 	       get_ip: metodo que cambia el formato de la direccion "ip"
@@ -57,8 +61,8 @@ device.py:
 		collision: metodo que se ejecuta cuando ocurre una colision
 		write: metodo que actualiza el "output/{device}.txt" del dispositivo
 		receive_bit: metodo que se ejecuta cuando se recibe un bit desde otro dispositivo
-		send_bit: metodo que envia un bit a otro dispositivo		
-		transmission: metodo que devuelve si el envio de un bit fue exitoso o no		
+		send_bit: metodo que envia un bit a otro dispositivo
+		transmission: metodo que devuelve si el envio de un bit fue exitoso o no
 
 hub.py:
 	Hub (hereda de Device): clase que abarca a las concentradores
@@ -69,24 +73,30 @@ hub.py:
 
 host.py:
 	Host (hereda de Device): clase que abarca a las computadoras
+		subnet_broadcast: metodo que genera la subred y el broadcast de la computadora
+		start: metodo que crea el "output/{device}_data.txt" y el "output/{device}_payload.txt" de la computadora
 		reset: metodo que limpia los datos a enviar por la computadora
 		reset_receiving: metodo que limpia los datos recibidos por la computadora
-		arp: metodo que envia "ARPR" desde la computadora hacia otro dispositivo
+		arp: metodo que verifica el protocolo "ARP"
+		tuple_ip: metodo que convierte una lista binaria en una tupla de cuatro elementos
+		write_data: metodo que actualiza el "output/{device}_data.txt" de la computadora
+		arpr: metodo que envia "ARPR" desde la computadora hacia otro dispositivo
+		send_packet: metodo que se ejecuta cuando la computadora recibe informacion que debe enviar en la capa de red
+		write_payload: metodo que actualiza el "output/{device}_payload.txt" de la computadora
 		binary_ip: metodo que calcula el valor binario de la direccion "ip"
 		start_send: metodo que se ejecuta cuando la computadora recibe informacion que debe enviar
 		send: metodo que envia informacion desde la computadora hacia otro dispositivo
 		set_mac: metodo que actualiza la direccion "mac" de la computadora
 		set_ip: metodo que actualiza la direccion "ip" de la computadora
-		packet: metodo que se ejecuta cuando la computadora recibe informacion que debe enviar en la capa de red
 
 switch.py:
 	Switch (hereda de Device): clase que abarca a los conmutadores
-		mac_map: metodo que actualiza la tabla de direcciones "mac" del conmutador
-		destination: metodo que actualiza el enlace entre dos puertos del conmutador para reenviar por uno la informacion que se recibe por otro
+		map: metodo que actualiza la tabla de direcciones "mac" del conmutador y enlaza dos puertos del conmutador para reenviar la informacion que se recibe por uno hacia el otro
 		end_frame: metodo que se ejecuta cuando se termina de recibir un bloque completo de informacion
 		send: metodo que permite enviar informacion desde los puertos del conmutador hacia otros dispositivos
 		send_port: metodo que envia informacion desde un puerto del conmutador hacia otros dispositivos
 		reset: metodo que limpia los datos recibidos y a reenviar por el conmutador
+		set_mac: metodo que actualiza la direccion "mac" de uno de los puertos del conmutador
 
 converter.py:
 	string_to_hexadecimal: metodo que transforma una cadena de caracteres correcta en un numero hexadecimal

@@ -30,4 +30,4 @@ def empty(length: int):
 
 def xor(a: list, b: list):
     n = min(len(a), len(b))
-    return [(0 if a[i] == b[i] else 1) for i in range(1, n)]
+    return [a[i] ^ b[i] for i in range(1, n)]

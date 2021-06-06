@@ -10,6 +10,11 @@ class Device:
         file = open("output/{}.txt".format(name), 'w')
         file.close()
 
+    def __lt__(self, other):
+        self_type = str(self.__class__).split('\'')[1].split('.')[0]
+        other_type = str(other.__class__).split('\'')[1].split('.')[0]
+        return self_type.__lt__(other_type) or (self_type.__eq__(other_type) and self.name.__lt__(other.name))
+
     def connect(self, time: int, port: int, other_device, other_port: int):
         cable = self.ports[port]
         device = cable.device
@@ -100,10 +105,7 @@ class Device:
     def sending(self):
         return "send="
 
-    def receiving_from(self, port: int):
-        return False
-
-    def transmission(self, port, device, string):
+    def transmission(self, port: int, device, string: str):
         string = "{}, transmission=".format(string)
         if device.sending_collision(port):
             self.collision(string)
@@ -111,5 +113,8 @@ class Device:
         self.write("{}successfully\n".format(string))
         return False
 
-    def sending_collision(self, port):
+    def receiving_from(self, port: int):
+        return False
+
+    def sending_collision(self, port: int):
         return False
