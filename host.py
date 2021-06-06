@@ -125,12 +125,11 @@ class Host(Device):
                     destination_ip = self.tuple_ip(data[:32])
                     if self.ip == destination_ip:
                         origen_ip = self.tuple_ip(data[32:64])
+                        origen_ip = "{}.{}.{}.{}".format(origen_ip[0], origen_ip[1], origen_ip[2], origen_ip[3])
                         # ttl = data[64:72]
                         # protocol = data[72:80]
                         length = binary_to_decimal(data[80:88]) * 8
-                        packet_data = data[88:]
-                        origen_ip = "{}.{}.{}.{}".format(origen_ip[0], origen_ip[1], origen_ip[2], origen_ip[3])
-                        packet_data = binary_to_hexadecimal(packet_data)
+                        packet_data = binary_to_hexadecimal(data[88:])
                         self.write_payload(time, origen_ip,
                                            "data={}, state={}".format(packet_data if len(packet_data) > 0 else "NULL",
                                                                       "ERROR" if length / 4 != len(packet_data)
