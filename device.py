@@ -11,9 +11,12 @@ class Device:
         file.close()
 
     def __lt__(self, other):
-        self_type = str(self.__class__).split('\'')[1].split('.')[0]
-        other_type = str(other.__class__).split('\'')[1].split('.')[0]
+        self_type = self.type()
+        other_type = other.type()
         return self_type.__lt__(other_type) or (self_type.__eq__(other_type) and self.name.__lt__(other.name))
+
+    def type(self):
+        return str(self.__class__).split('\'')[1].split('.')[0]
 
     def connect(self, time: int, port: int, other_device, other_port: int):
         cable = self.ports[port]
